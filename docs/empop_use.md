@@ -1,8 +1,4 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
+
 
 ![](empop_logo.jpeg)
 
@@ -51,7 +47,7 @@ editor_options:
 
     -   Initial Release of EMPOP mtDNA Database -- Directions for Use
 
-## 1. Introduction {#introduction .unnumbered}
+## 1. Introduction
 
 The high copy number per cell, the stability against degradation and the
 maternal mode of inheritance make the mitochondrial (mt) genome
@@ -72,7 +68,7 @@ individual/matriline. If two samples cannot be excluded the significance
 of the mtDNA match is assessed by making reference to the abundance of
 that particular mtDNA sequence (= mitotype) in a relevant population.
 
-## 2. Concept {#concept .unnumbered}
+## 2. Concept
 
 The EMPOP database aims at the collection, quality control and
 searchable presentation of mtDNA mitotypes from all over the world.
@@ -101,7 +97,7 @@ Release updates) will be introduced by the database curators to ensure
 continuous data quality and are made publicly available (see Release
 history).
 
-## 3. Register/login {#registerlogin .unnumbered}
+## 3. Register/login
 
 An EMPOP user is identified by the Email address to which account
 information (voluntary basis) and search history are connected. Follow
@@ -111,7 +107,7 @@ account history by the user.
 
 ![Figure1 - User Registration](fig1_user_registration.png)
 
-## 4. Using EMPOP for mitotype searches {#using-empop-for-mitotype-searches .unnumbered}
+## 4. Using EMPOP for mitotype searches
 
 EMPOP follows the [revised and extended guidelines for mitochondrial DNA
 typing](http://www.ncbi.nlm.nih.gov/pubmed/25117402) issued by the DNA
@@ -135,111 +131,49 @@ ii. 'count' and 'cost' search modes for neighbours
 iii. implementation of 28 block indels containing between 2 and 264
      base-pairs (Table 1)
 
-+:-:+:--------:+:------------------:+:--------------------:+------------+
-| * | **I      | **Deletion         | **Pattern**          | **Length   |
-| * | nsertion | positions**        |                      | in bp**    |
-| N | po       |                    |                      |            |
-| o | sition** |                    |                      |            |
-| . |          |                    |                      |            |
-| * |          |                    |                      |            |
-| * |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 1 | 16032    | 16032.1            | TCTCT G T T CTTTCAT  | 15         |
-|   |          |                    |                      |            |
-|   |          | 16032.15           |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 2 | 16164    | 16 1 6 5-16318     | A ACCCA A T C        | 154        |
-|   |          |                    | CACA...              |            |
-+---+----------+--------------------+----------------------+------------+
-| 3 | 16309    | 16 3 1 0-16316     | GTACATA              | 7          |
-+---+----------+--------------------+----------------------+------------+
-| 4 | 104      | 105-110            | CGGAGC               | 6          |
-+---+----------+--------------------+----------------------+------------+
-| 5 | 105      | 106-111            | GGAGCA               | 6          |
-+---+----------+--------------------+----------------------+------------+
-| 6 | 209      | 20 9 . 1-209.7     | GTGTGTT              | 7          |
-+---+----------+--------------------+----------------------+------------+
-| 7 | 241      | 24 1 . 1-241.3     | TAA                  | 3          |
-+---+----------+--------------------+----------------------+------------+
-| 8 | 286      | 28 6 . 1-286.5     | TAACA                | 5          |
-+---+----------+--------------------+----------------------+------------+
-| 9 | 290      | 291-294            | ATTT                 | 4          |
-+---+----------+--------------------+----------------------+------------+
-| 1 | 291      | 291 . 1 -291.16    | A CATCA T A A        | 16         |
-| 0 |          |                    | CAAA...              |            |
-+---+----------+--------------------+----------------------+------------+
-| 1 | 292      | 29 2 . 1-292.2     | AT                   | 2          |
-| 1 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 1 | 292      | 29 2 . 2-292.4     | AT                   | 2          |
-| 2 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 1 | 306      | 307-356            | C CCTCC C C C        | 51         |
-| 3 |          |                    | CGCT...              |            |
-+---+----------+--------------------+----------------------+------------+
-| 1 | 309      | 310-315            | TCCCCC               | 6          |
-| 4 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 1 | 315      | 3 1 6-319.0        | GCTT                 | 4          |
-| 5 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 1 | 342      | 34 2 . 1-342.2     | AT                   | 2          |
-| 6 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 1 | 343      | 34 3 . 1-343.3     | ATC                  | 3          |
-| 7 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 1 | 368      | 36 8 . 1-368.4     | AGAA                 | 4          |
-| 8 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 1 | 398      | 398 . 1 -398.14    | ACCA G A T TTCAAAT   | 14         |
-| 9 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 2 | 470      | 471-478            | T ACTACTA            | 8          |
-| 0 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 2 | 494      | 494-503            | C C CCGCCCA          | 9          |
-| 1 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 2 | 524      | 52 4 . 1-524.2     | GC                   | 2          |
-| 2 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 2 | 563      | 563.1              | A ACAAA G A A        | 204        |
-| 3 |          |                    | CCC\...              |            |
-|   |          | 563.204            |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 2 | 588      | 568 . 1 -588.16    | C ACAGT T T A        | 16         |
-| 4 |          |                    | TGTA...              |            |
-+---+----------+--------------------+----------------------+------------+
-| 2 | 3326     | 3 3 27-3590        | A CTCCT C A T        | 264        |
-| 5 |          |                    | TGTA...              |            |
-+---+----------+--------------------+----------------------+------------+
-| 2 | 6019     | 6 0 20-6024        | CGAGC                | 5          |
-| 6 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 2 | 9486     | 9 4 87-9501        | T CGCAG G A T        | 15         |
-| 7 |          |                    | TTTT...              |            |
-+---+----------+--------------------+----------------------+------------+
-| 2 | 14786    | 14 7 8 7-14790     | TTAA                 | 4          |
-| 8 |          |                    |                      |            |
-+---+----------+--------------------+----------------------+------------+
-| 2 | 16006    | 160 06. 1 -        | CTA                  | 3          |
-| 9 |          | 16006.3            |                      |            |
-+---+----------+--------------------+----------------------+------------+
+| **No.** | **Insertion Position** | **Deletion Positions** | **Pattern** | **Length (bp)** |
+|---|---|---|---|---|
+| 1 | 16032 | 16032.1-16032.15 | TCTCTGTTCTTTCAT | 15 |
+| 2 | 16164 | 16165-16318 | ACCCAATCCACA... | 154 |
+| 3 | 16309 | 16310-16316 | GTACATA | 7 |
+| 4 | 104 | 105-110 | CGGAGC | 6 |
+| 5 | 105 | 106-111 | GGAGCA | 6 |
+| 6 | 209 | 209.1-209.7 | GTGTGTT | 7 |
+| 7 | 241 | 241.1-241.3 | TAA | 3 |
+| 8 | 286 | 286.1-286.5 | TAACA | 5 |
+| 9 | 290 | 291-294 | ATTT | 4 |
+| 10 | 291 | 291.1-291.16 | ACATCATAACAAA... | 16 |
+| 11 | 292 | 292.1-292.2 | AT | 2 |
+| 12 | 292 | 292.2-292.4 | AT | 2 |
+| 13 | 306 | 307-356 | CCTCCCCTCGCT... | 51 |
+| 14 | 309 | 310-315 | TCCCCC | 6 |
+| 15 | 315 | 316-319.0 | GCTT | 4 |
+| 16 | 342 | 342.1-342.2 | AT | 2 |
+| 17 | 343 | 343.1-343.3 | ATC | 3 |
+| 18 | 368 | 368.1-368.4 | AGAA | 4 |
+| 19 | 398 | 398.1-398.14 | ACCAGATTTCAAAT | 14 |
+| 20 | 470 | 471-478 | TACTACTA | 8 |
+| 21 | 494 | 494-503 | CCCGCCCA | 9 |
+| 22 | 524 | 524.1-524.2 | GC | 2 |
+| 23 | 563 | 563.1-563.204 | ACAAAAGAA | 204 |
+| 24 | 588 | 588.1-588.16 | ACAGTTTA | 16 |
+| 25 | 3326 | 3327-3590 | CTCCTCATGTA... | 264 |
+| 26 | 6019 | 6020-6024 | CGAGC | 5 |
+| 27 | 9486 | 9487-9501 | TGCAGGATTTTT... | 15 |
+| 28 | 14786 | 14787-14790 | TTAA | 4 |
+| 29 | 16006 | 16006.1-16006.3 | CTA | 3 |
 
-: Table 1 - List of implemented block indels
-
-## 4.1. Query options {#query-options .unnumbered}
+## 4.1. Query options
 
 ![](fig2_query_input.png)
 
-### 4.1.1. Sample ID {#sample-id .unnumbered}
+### 4.1.1. Sample ID
 
 Use this field to enter the ID of a mitotype. Search results are linked
 to this information and also provided on printouts. Sample IDs are used
 to identify queries in the search history of each individual user.
 
-### 4.1.2. Ranges {#ranges .unnumbered}
+### 4.1.2. Ranges
 
 Database queries require specification of the interpretation range(s)
 for rCRS-coded and FASTA-like string mitotypes. Typical ranges are:
@@ -271,7 +205,7 @@ queried as 3107 serves as place holder in the rCRS to keep the original
 numbering system downstream of that position (the CRS mistakenly
 included that position).**
 
-### 4.1.3. Mitotype {#mitotype .unnumbered}
+### 4.1.3. Mitotype
 
 Submit your mitotypes as FASTA-like sequence strings or reported
 relative to the rCRS.
@@ -339,13 +273,13 @@ from uncapitalized letters (a, g, c, t, y, ...). Uncapizalized letters
 stand for a mixture of a deletion and a non-deleted variant. E.g. T152c
 represents two variants, T152C and T152del.**
 
-### 4.1.4. Release {#release .unnumbered}
+### 4.1.4. Release
 
 EMPOP 4 offers release-specific queries. The most recent database
 release is selected by default. Earlier database releases can be
 selected if available.
 
-### 4.1.5. Find neighbors {#find-neighbors .unnumbered}
+### 4.1.5. Find neighbors
 
 EMPOP offers searching for neighbors by count and by cost. Under current
 settings EMPOP reports neighbors within a count of 2 differences or
@@ -354,7 +288,7 @@ costs of 5.34 (see Huber et al 2018 for details).
 Finding neighbors by count is the default setting for forensic frequency
 estimates.
 
-### 4.1.6. Match type {#match-type .unnumbered}
+### 4.1.6. Match type
 
 This is relevant for the consideration of point heteroplasmy in both the
 query sequence as well as the database sequences.
@@ -368,7 +302,7 @@ matches only 152Y.
 
 Pattern match is the default setting for forensic frequency estimates.
 
-### 4.1.7. Disregard InDels {#disregard-indels .unnumbered}
+### 4.1.7. Disregard InDels
 
 Length variants that are known hotspots for insertion/deletions (indels)
 should be ignored in a forensic database query. This involves the C-runs
@@ -415,7 +349,7 @@ variant regions between query and database sequences.
 costs, which influences the ranking of results. See section 4.4.
 Neighbors.**
 
-## 4.2. Result {#result .unnumbered}
+## 4.2. Result
 
 The execution of a database query automatically directs the user to the
 **Results** tab. Sample ID, query range(s) and mitotype are indicated in
@@ -462,12 +396,12 @@ range (red) and the matches in the sampled populations (green).
 
 ![](fig5_map.png)
 
-## 4.3. Details {#details .unnumbered}
+## 4.3. Details
 
 The Details tab provides a more detailed presentation of the matching
 mitotypes.
 
-### 4.3.1. When matches are found {#when-matches-are-found .unnumbered}
+### 4.3.1. When matches are found
 
 ![](fig6_details.png)
 
@@ -490,7 +424,7 @@ displays the haplogroup estimate with lowest costs (including a
 tolerance of 0.1) and Rank 2 displays the haplogroup estimate with the
 next lowest costs (including a tolerance of 0.1).
 
-### 4.3.2. When no matches are found {#when-no-matches-are-found .unnumbered}
+### 4.3.2. When no matches are found
 
 MtDNA sequence queries often do not result in database matches. In these
 cases the Details tab stays empty.
@@ -507,7 +441,7 @@ In Details no matches are listed:
 
 ![](fig8_no_matches.png)
 
-## 4.4. Neighbors {#neighbors .unnumbered}
+## 4.4. Neighbors
 
 Similar sequences with a low number of differences are displayed here.
 
@@ -545,14 +479,14 @@ database mitotypes.
 mitotypes, which are listed with the individual costs. Disregarded
 indels do not contribute to the final costs.
 
-## 4.5. Alignment {#alignment .unnumbered}
+## 4.5. Alignment
 
 Since EMPOP 4 the phylogenetic alignment is displayed as illustrated in
 Figure 10 below:
 
 ![Figure 10 - Phylogenetic Alignment](fig10_alignment.png)
 
-## 4.6. Haplogrouping {#haplogrouping .unnumbered}
+## 4.6. Haplogrouping
 
 The assignment of haplogroups to mitotypes contributes substantial value
 for quality control, not only in forensic genetics but also in
@@ -567,7 +501,7 @@ haplogroup assignment.
 The scientific publication is currently under preparation, details will
 follow later.
 
-# 5. Browsing EMPOP for populations {#browsing-empop-for-populations .unnumbered}
+# 5. Browsing EMPOP for populations
 
 ![](fig11_populations.png)
 
@@ -576,12 +510,12 @@ be found by using the accession number (if known), geographic or
 metapopulation affiliations. Published datasets can be searched by Text
 (Title) and Authors.
 
-## 6. EMPOP Tools {#empop-tools .unnumbered}
+## 6. EMPOP Tools
 
 The EMPOP tools section provides a suite of software to support the
 analysis and interpretation of mitochondrial DNA sequence variation.
 
-### 6.1.Haplogroup Browser {#haplogroup-browser}
+### 6.1.Haplogroup Browser
 
 This tool represents the established most recent
 [Phylotree](http://www.ncbi.nlm.nih.gov/pubmed/18853457) haplogroups in
@@ -594,7 +528,7 @@ rCRS in a database of \> 20.000 mtGenome sequences.
 
 ![](fig12_populations.png)
 
-### 6.2.EMPcheck {#empcheck}
+### 6.2.EMPcheck
 
 EMPcheck is a tool to perform plausibility checks on an rCRS-coded data
 table.
@@ -648,7 +582,7 @@ EMPOP.
 | mitotype4 T2b 1 16126C 16294T 16296T 16304C 73G 263G 315.1C
 | mitotype5 ? 1 16223T 73G 263G 315.1C
 
-### 6.3. NETWORK {#network}
+### 6.3. NETWORK
 
 This tool can be used to calculate and draw quasi-median networks. They
 are useful to examine the quality of an mtDNA dataset.
