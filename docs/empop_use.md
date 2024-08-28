@@ -1,8 +1,4 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
+
 
 ![](empop_logo.jpeg)
 
@@ -51,7 +47,7 @@ editor_options:
 
     -   Initial Release of EMPOP mtDNA Database -- Directions for Use
 
-## 1. Introduction {#introduction .unnumbered}
+## 1. Introduction
 
 The high copy number per cell, the stability against degradation and the
 maternal mode of inheritance make the mitochondrial (mt) genome
@@ -72,7 +68,7 @@ individual/matriline. If two samples cannot be excluded the significance
 of the mtDNA match is assessed by making reference to the abundance of
 that particular mtDNA sequence (= mitotype) in a relevant population.
 
-## 2. Concept {#concept .unnumbered}
+## 2. Concept
 
 The EMPOP database aims at the collection, quality control and
 searchable presentation of mtDNA mitotypes from all over the world.
@@ -101,7 +97,7 @@ Release updates) will be introduced by the database curators to ensure
 continuous data quality and are made publicly available (see Release
 history).
 
-## 3. Register/login {#registerlogin .unnumbered}
+## 3. Register/login
 
 An EMPOP user is identified by the Email address to which account
 information (voluntary basis) and search history are connected. Follow
@@ -111,7 +107,7 @@ account history by the user.
 
 ![Figure1 - User Registration](fig1_user_registration.png)
 
-## 4. Using EMPOP for mitotype searches {#using-empop-for-mitotype-searches .unnumbered}
+## 4. Using EMPOP for mitotype searches
 
 EMPOP follows the [revised and extended guidelines for mitochondrial DNA
 typing](http://www.ncbi.nlm.nih.gov/pubmed/25117402) issued by the DNA
@@ -229,17 +225,17 @@ iii. implementation of 28 block indels containing between 2 and 264
 
 : Table 1 - List of implemented block indels
 
-## 4.1. Query options {#query-options .unnumbered}
+## 4.1. Query options
 
 ![](fig2_query_input.png)
 
-### 4.1.1. Sample ID {#sample-id .unnumbered}
+### 4.1.1. Sample ID
 
 Use this field to enter the ID of a mitotype. Search results are linked
 to this information and also provided on printouts. Sample IDs are used
 to identify queries in the search history of each individual user.
 
-### 4.1.2. Ranges {#ranges .unnumbered}
+### 4.1.2. Ranges
 
 Database queries require specification of the interpretation range(s)
 for rCRS-coded and FASTA-like string mitotypes. Typical ranges are:
@@ -271,7 +267,7 @@ queried as 3107 serves as place holder in the rCRS to keep the original
 numbering system downstream of that position (the CRS mistakenly
 included that position).**
 
-### 4.1.3. Mitotype {#mitotype .unnumbered}
+### 4.1.3. Mitotype
 
 Submit your mitotypes as FASTA-like sequence strings or reported
 relative to the rCRS.
@@ -339,13 +335,13 @@ from uncapitalized letters (a, g, c, t, y, ...). Uncapizalized letters
 stand for a mixture of a deletion and a non-deleted variant. E.g. T152c
 represents two variants, T152C and T152del.**
 
-### 4.1.4. Release {#release .unnumbered}
+### 4.1.4. Release
 
 EMPOP 4 offers release-specific queries. The most recent database
 release is selected by default. Earlier database releases can be
 selected if available.
 
-### 4.1.5. Find neighbors {#find-neighbors .unnumbered}
+### 4.1.5. Find neighbors
 
 EMPOP offers searching for neighbors by count and by cost. Under current
 settings EMPOP reports neighbors within a count of 2 differences or
@@ -354,7 +350,7 @@ costs of 5.34 (see Huber et al 2018 for details).
 Finding neighbors by count is the default setting for forensic frequency
 estimates.
 
-### 4.1.6. Match type {#match-type .unnumbered}
+### 4.1.6. Match type
 
 This is relevant for the consideration of point heteroplasmy in both the
 query sequence as well as the database sequences.
@@ -368,7 +364,7 @@ matches only 152Y.
 
 Pattern match is the default setting for forensic frequency estimates.
 
-### 4.1.7. Disregard InDels {#disregard-indels .unnumbered}
+### 4.1.7. Disregard InDels
 
 Length variants that are known hotspots for insertion/deletions (indels)
 should be ignored in a forensic database query. This involves the C-runs
@@ -415,7 +411,7 @@ variant regions between query and database sequences.
 costs, which influences the ranking of results. See section 4.4.
 Neighbors.**
 
-## 4.2. Result {#result .unnumbered}
+## 4.2. Result
 
 The execution of a database query automatically directs the user to the
 **Results** tab. Sample ID, query range(s) and mitotype are indicated in
@@ -462,12 +458,12 @@ range (red) and the matches in the sampled populations (green).
 
 ![](fig5_map.png)
 
-## 4.3. Details {#details .unnumbered}
+## 4.3. Details
 
 The Details tab provides a more detailed presentation of the matching
 mitotypes.
 
-### 4.3.1. When matches are found {#when-matches-are-found .unnumbered}
+### 4.3.1. When matches are found
 
 ![](fig6_details.png)
 
@@ -490,7 +486,7 @@ displays the haplogroup estimate with lowest costs (including a
 tolerance of 0.1) and Rank 2 displays the haplogroup estimate with the
 next lowest costs (including a tolerance of 0.1).
 
-### 4.3.2. When no matches are found {#when-no-matches-are-found .unnumbered}
+### 4.3.2. When no matches are found
 
 MtDNA sequence queries often do not result in database matches. In these
 cases the Details tab stays empty.
@@ -507,7 +503,7 @@ In Details no matches are listed:
 
 ![](fig8_no_matches.png)
 
-## 4.4. Neighbors {#neighbors .unnumbered}
+## 4.4. Neighbors
 
 Similar sequences with a low number of differences are displayed here.
 
@@ -545,14 +541,14 @@ database mitotypes.
 mitotypes, which are listed with the individual costs. Disregarded
 indels do not contribute to the final costs.
 
-## 4.5. Alignment {#alignment .unnumbered}
+## 4.5. Alignment
 
 Since EMPOP 4 the phylogenetic alignment is displayed as illustrated in
 Figure 10 below:
 
 ![Figure 10 - Phylogenetic Alignment](fig10_alignment.png)
 
-## 4.6. Haplogrouping {#haplogrouping .unnumbered}
+## 4.6. Haplogrouping
 
 The assignment of haplogroups to mitotypes contributes substantial value
 for quality control, not only in forensic genetics but also in
@@ -567,7 +563,7 @@ haplogroup assignment.
 The scientific publication is currently under preparation, details will
 follow later.
 
-# 5. Browsing EMPOP for populations {#browsing-empop-for-populations .unnumbered}
+# 5. Browsing EMPOP for populations
 
 ![](fig11_populations.png)
 
@@ -576,12 +572,12 @@ be found by using the accession number (if known), geographic or
 metapopulation affiliations. Published datasets can be searched by Text
 (Title) and Authors.
 
-## 6. EMPOP Tools {#empop-tools .unnumbered}
+## 6. EMPOP Tools
 
 The EMPOP tools section provides a suite of software to support the
 analysis and interpretation of mitochondrial DNA sequence variation.
 
-### 6.1.Haplogroup Browser {#haplogroup-browser}
+### 6.1.Haplogroup Browser
 
 This tool represents the established most recent
 [Phylotree](http://www.ncbi.nlm.nih.gov/pubmed/18853457) haplogroups in
@@ -594,7 +590,7 @@ rCRS in a database of \> 20.000 mtGenome sequences.
 
 ![](fig12_populations.png)
 
-### 6.2.EMPcheck {#empcheck}
+### 6.2.EMPcheck
 
 EMPcheck is a tool to perform plausibility checks on an rCRS-coded data
 table.
@@ -648,7 +644,7 @@ EMPOP.
 | mitotype4 T2b 1 16126C 16294T 16296T 16304C 73G 263G 315.1C
 | mitotype5 ? 1 16223T 73G 263G 315.1C
 
-### 6.3. NETWORK {#network}
+### 6.3. NETWORK
 
 This tool can be used to calculate and draw quasi-median networks. They
 are useful to examine the quality of an mtDNA dataset.
