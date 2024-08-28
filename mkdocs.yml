@@ -3,4 +3,10 @@ theme: readthedocs
 
 nav:
 - Home: index.md
-- Introduction: empop_use.md
+- entire_doc: empop_use.md
+- Introduction: introduction.md
+- Concept: concept.md
+- Register & Login: register.md
+- Using EMPOP for mitotype searches: using_empop.md
+- Browsing EMPOP for populations: browsing.md
+- EMPOP Tools: tools.md
