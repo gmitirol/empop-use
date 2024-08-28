@@ -1,7 +1,6 @@
-site_name: My MkDocs Site
+site_name: EMPOP Documentation
 
 nav:
-  - Home: index.md
+  - Home: docs/empop_use.md
 
-theme:
-  name: material
+theme: readthedocs
