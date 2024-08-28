@@ -3,7 +3,7 @@ theme: readthedocs
 
 nav:
 - Home: index.md
-- entire_doc: empop_use.md
+- Revision Overview: revisions.md
 - Introduction: introduction.md
 - Concept: concept.md
 - Register & Login: register.md
