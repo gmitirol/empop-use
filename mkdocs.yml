@@ -1,32 +1,7 @@
-site_name: EMPOP
-theme: readthedocs
+site_name: My MkDocs Site
 
 nav:
-- Introduction: empop_use.md
-- Concept: 
-- Register:
-  - LogIn: available-trees.md
-- Searches:
-  - Query Options: 
-  - Results:
-  - Details:
-  - Neighbors:
-  - Alignment:
-  - Haplogrouping:
-- FAQ: faq.md
-- Contact: contact.md
+  - Home: index.md
 
-repo_name: gmitirol/empop-use
-repo_url: https://github.com/gmitirol/empop-use
-edit_uri: edit/master/docs
-
-extra:
-  social:
-    - type: github-alt
-      https://github.com/gmitirol/empop-use
-
-markdown_extensions:
-    - toc:
-        permalink:
-    - admonition:
-    - tables
+theme:
+  name: material
