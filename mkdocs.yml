@@ -1,20 +1,6 @@
-site_name: EMPOP
+site_name: EMPOP Documentation
 theme: readthedocs
 
 nav:
+- Home: index.md
 - Introduction: empop_use.md
-- Concept: 
-- Register:
-  - LogIn: 
-- Searches:
-  - Query Options: 
-  - Results:
-  - Details:
-  - Neighbors:
-  - Alignment:
-  - Haplogrouping:
-- FAQ:
-- Contact:
-
-repo_name: gmitirol/empop-use
-repo_url: https://github.com/gmitirol/empop-use
