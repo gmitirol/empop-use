@@ -1,8 +1,4 @@
-
-
-![](empop_logo.jpeg)
-
-# **EMPOP mtDNA Database -- Directions for Use**
+# **EMPOP mtDNA Database - Directions for Use**
 
 ## **Revision Overview**
 
