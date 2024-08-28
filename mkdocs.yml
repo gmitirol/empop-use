@@ -5,7 +5,7 @@ nav:
 - Introduction: empop_use.md
 - Concept: 
 - Register:
-  - LogIn: available-trees.md
+  - LogIn: 
 - Searches:
   - Query Options: 
   - Results:
@@ -13,20 +13,8 @@ nav:
   - Neighbors:
   - Alignment:
   - Haplogrouping:
-- FAQ: faq.md
-- Contact: contact.md
+- FAQ:
+- Contact:
 
 repo_name: gmitirol/empop-use
 repo_url: https://github.com/gmitirol/empop-use
-edit_uri: edit/master/docs
-
-extra:
-  social:
-    - type: github-alt
-      https://github.com/gmitirol/empop-use
-
-markdown_extensions:
-    - toc:
-        permalink:
-    - admonition:
-    - tables
