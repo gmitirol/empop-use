@@ -8,7 +8,7 @@
 
 EMPOP holds anonymized mitotypes that are not connected to any personal data of the sample donors. Only the country of origin and the self-assigned metapopulation of the sample donors are provided through an EMPOP query.
 
-::: warning
+:::⚠️
 EMPOP cannot be used to re-identify the sample donor.
 EMPOP does not support the provision of evidentiary leads. Data cannot be downloaded from EMPOP.
 :::
