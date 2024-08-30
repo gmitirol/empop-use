@@ -1,5 +1,8 @@
 site_name: EMPOP Documentation
-theme: readthedocs
+theme:
+  name: material
+  features:
+    - wagtail
 
 nav:
 - Home: index.md
