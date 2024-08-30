@@ -10,3 +10,8 @@ nav:
 - Using EMPOP for mitotype searches: using_empop.md
 - Browsing EMPOP for populations: browsing_empop.md
 - EMPOP Tools: tools.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
