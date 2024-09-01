@@ -8,10 +8,12 @@
 
 EMPOP holds anonymized mitotypes that are not connected to any personal data of the sample donors. Only the country of origin and the self-assigned metapopulation of the sample donors are provided through an EMPOP query.
 
-:::⚠️
-EMPOP cannot be used to re-identify the sample donor.
-EMPOP does not support the provision of evidentiary leads. Data cannot be downloaded from EMPOP.
-:::
+⚠️ EMPOP cannot be used to re-identify the sample donor.
+
+⚠️ EMPOP does not support the provision of evidentiary leads.
+
+⚠️ Data cannot be downloaded from EMPOP.
+
 
 ### 2.1	 MtDNA data submission and quality control
 Anonymized population data are provided to EMPOP by international research groups. Data submissions must follow ethical regulations of the countries where the samples were taken and where the analyses were performed and include documentation of the respective Ethics Board(s) and Informed Consent Forms. Guidance is provided by the Report of the Forensic Database Advisory Board. 
