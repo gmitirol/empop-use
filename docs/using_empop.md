@@ -3,12 +3,13 @@
 EMPOP follows the revised and extended guidelines for mitochondrial DNA typing issued by the DNA commission of the ISFG (Parson et al. 2014). See document for further details.
 
 **EMPOP’s query engine - SAM 2**
+
 EMPOP uses SAM 2, an updated and optimized software based on tests with carefully curated full mitogenome sequences to perform unbiased and conservative database queries to assist statistical evaluation of the evidence in forensic practice.
 The major changes to the earlier version of the software SAM (Röck et al 2011) include:
 
 1. updated alignment/nomenclature conventions for the phylogenetically instable regions 50-70, 310-316, 455-460, 961-966, 8276-8279, 16180-16193, and 16258-16262
 2. *count* and *cost* search modes for neighbours
-3. implementation of 28 block indels containing between 2 and 264 base-pairs (Table 1)
+3. implementation of 28 block indels containing between 2 and 264 base-pairs
 
 |     No.    |     Insertion position    |     Deletion positions    |     Pattern            |     Length [in bp]    |
 |------------|---------------------------|---------------------------|------------------------|-----------------------|
@@ -85,7 +86,7 @@ This is relevant for the consideration of point heteroplasmy in both the query s
 Pattern match is the default setting for forensic frequency estimates.
 
 #### 4.1.7. Disregard InDels 
-Length variants that are known hotspots for insertion/deletions (indels) should be ignored in a forensic database query. This involves the C-runs around positions 16193, 309, 463 and 573 and the T-run around position 455 relative to the rCRS in the control region. In the coding region length variants around positions 960, 5899, 8276 and 8285 are ignored for a forensic query (Table 2).
+Length variants that are known hotspots for insertion/deletions (indels) should be ignored in a forensic database query. This involves the C-runs around positions 16193, 309, 463 and 573 and the T-run around position 455 relative to the rCRS in the control region. In the coding region length variants around positions 960, 5899, 8276 and 8285 are ignored for a forensic query.
 
 |     Length variant    |     5’ junction    |     3’ junction    |     Repeating motif    |
 |-----------------------|--------------------|--------------------|------------------------|
