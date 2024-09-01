@@ -7,7 +7,7 @@ EMPOP uses SAM 2, an updated and optimized software based on tests with carefull
 The major changes to the earlier version of the software SAM (Röck et al 2011) include:
 
 1. updated alignment/nomenclature conventions for the phylogenetically instable regions 50-70, 310-316, 455-460, 961-966, 8276-8279, 16180-16193, and 16258-16262
-2. ‘count’ and ‘cost’ search modes for neighbours
+2. *count* and *cost* search modes for neighbours
 3. implementation of 28 block indels containing between 2 and 264 base-pairs (Table 1)
 
 |     No.    |     Insertion position    |     Deletion positions    |     Pattern            |     Length [in bp]    |
@@ -116,8 +116,8 @@ The execution of a database query automatically directs the user to the Results 
 
 An uncorrected frequency estimate is provided including a two-tailed Clopper Pearson confidence interval. Correction for sampling bias is provided and alternative methods to calculate probabilities are provided in the drop-down box to the right. P values can be estimated based on following formulas:
 
-1.	$(x+1)/(n+1)
-2.	$(x+2)/(n+2)
+1.	(x+1)/(n+1)
+2.	(x+2)/(n+2)
 3.	CI from zero pop
 
 Where x… number of database hits and n… database size
