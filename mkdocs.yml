@@ -1,5 +1,6 @@
 site_name: EMPOP Documentation
-theme: readthedocs
+theme:
+  name: material
 
 nav:
 - Home: index.md
