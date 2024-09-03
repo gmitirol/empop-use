@@ -69,15 +69,15 @@ Differences to the revised Cambridge Reference Sequence (rCRS, Andrews et al 199
 |     Insertions      |     315.1C     -315.1C     315+C     309.1C     309.2C     309+CC    |     For multiple insertions all preceding insertions need to be stated,   i.e. annotating 309.2C is not possible without annotating 309.1C                                                                                                                                                               |
 |     Deletions       |     249-     A249-     249delA     249del                            |     'del' is treated case insensitive, e.g. Del, DEL, dEL, deL etc is   accepted.     Please note that the single character 'D' is considered a mixture of   A, G, and T (IUB code). The single character 'd' is considered a mixture of   A, G, T, and deletion (see Parson et al 2014 for details).    |
 
-::: warning
-Note that the EMPOP query discerns capital letters (A,G, C, T, Y, …) from uncapitalized letters (a, g, c, t, y, …). Uncapizalized letters stand for a mixture of a deletion and a non-deleted variant. E.g. T152c represents two variants, T152C and T152del. 
-:::
+⚠️ Note that the EMPOP query discerns capital letters (A,G, C, T, Y, …) from uncapitalized letters (a, g, c, t, y, …).
+⚠️ Uncapizalized letters stand for a mixture of a deletion and a non-deleted variant. E.g. T152c represents two variants, T152C and T152del. 
+
 
 #### 4.1.4. Release
 EMPOP 4 offers release-specific queries. The most recent database release is selected by default. Earlier database releases can be selected if available. 
 
 #### 4.1.5. Find neighbors
-EMPOP offers searching for neighbors by count and by cost. Under current settings EMPOP reports neighbors within a count of 2 differences or costs of 5.34 (see Huber et al 2018 for details).
+EMPOP offers searching for neighbors by count and by cost. Under current settings EMPOP reports neighbors within a count of 2 differences or costs of 5.34 see ([Huber et al 2018](https:// 10.1016/j.fsigen.2018.09.001)).
 Finding neighbors by count is the default setting for forensic frequency estimates.
 
 #### 4.1.6. Match type
@@ -102,7 +102,7 @@ Length variants that are known hotspots for insertion/deletions (indels) should 
 |     8276              |     8271           |     8277           |     C                  |
 |     8285              |     8280           |     8286           |     C                  |
 
-* Note that the C-insertion between 310 and 316 is a stable length variant, not a length hotspot. It is listed here for uninterrupted C-runs as a consequence of T310C.
+❗ Note that the C-insertion between 310 and 316 is a stable length variant, not a length hotspot. It is listed here for uninterrupted C-runs as a consequence of T310C.
 
 Standard query settings disregard discrepancies in hotspot length variant regions between query and database sequences.
 Note that costs of disregarded InDels do not contribute to the final costs, which influences the ranking of results. See section 4.4. Neighbors.
