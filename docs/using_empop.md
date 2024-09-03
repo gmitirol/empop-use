@@ -174,7 +174,7 @@ Note that some combined mutations are single events, e.g. 523del 524del or 106-1
 Mutations specifies differences between query and database mitotypes, which are listed with the individual costs. Disregarded indels do not contribute to the final costs.
 
 ### 4.5. Alignment
-Since EMPOP 4 the phylogenetic alignment is displayed as illustrated in Figure 10 below:
+Since EMPOP 4 the phylogenetic alignment is displayed as illustrated below:
 
 ![](images/fig10_alignment.png)
 
