@@ -44,6 +44,7 @@ The major changes to the earlier version of the software SAM (Röck et al 2011) 
 |     29     |     16006                 |     16006.1-16006.3       |     CTA                |     3                 |
 
 ### 4.1 Query Options
+![](images/fig2_query_input.png)
 
 #### 4.1.1. Sample ID
 Use this field to enter the ID of a mitotype. Search results are linked to this information and also provided on printouts. Sample IDs are used to identify queries in the search history of each individual user.
@@ -57,7 +58,7 @@ Submit your mitotypes as FASTA-like sequence strings or reported relative to the
 Query sequence strings:
 Copy&paste the sequence string from a text file or a consensus from sequence analysis software. Do not enter header information like in usual FASTA format; enter nucleotides only. For mixtures (e.g point heteroplasmy) use the extended IUPAC code (see below).
 
-FIGURE 3
+![](images/fig3_fasta_input.png)
 
 *Query rCRS aligned mitotypes:*
 Differences to the revised Cambridge Reference Sequence (rCRS, Andrews et al 1999) are entered as mitotypes.
@@ -113,7 +114,7 @@ The execution of a database query automatically directs the user to the Results 
 2.	number of observed matches sorted by geographic origin and
 3.	number of observed matches by metapopulation affiliation
 
-   FIGURE 4
+![](images/fig4_query_result.png)
 
 An uncorrected frequency estimate is provided including a two-tailed Clopper Pearson confidence interval. Correction for sampling bias is provided and alternative methods to calculate probabilities are provided in the drop-down box to the right. P values can be estimated based on following formulas:
 
@@ -129,13 +130,13 @@ Note that the number of mitotypes included in a query result depends on the indi
 
 Below the tabular representation of the database query an interactive map can be found that depicts the sampled populations within the query range (red) and the matches in the sampled populations (green).
 
-FIGURE 5
+![](images/fig5_map.png)
 
 ### 4.3. Details
 The Details tab provides a more detailed presentation of the matching mitotypes.
 
 #### 4.3.1. When matches are found
-FIGURE 6
+![](images/fig6_details.png)
 
 EMPOP provides a summary table of all matching mitotypes that meet the queried sequence range. Columns can be sorted by clicking on the column headers.
 Geographic and metapopulation origins can be filtered using the text boxes.
@@ -145,20 +146,20 @@ Haplogroup indicates the samples’ haplogroup assignment. In case of a database
 4.3.2. When no matches are found
 MtDNA sequence queries often do not result in database matches. In these cases the Details tab stays empty.
 
-EXAMPLE IMAGE
+![](images/4_3_2_not_matches.png)
 
 Unobserved mitotypes are indicated by a frequency value of “0”:
 
-FIGURE 7
+![](images/fig7_no_matches.png)
 
 In Details no matches are listed:
 
-FIGURE 8
+![](images/fig8_no_matches.png)
 
 ### 4.4. Neighbors
 Similar sequences with a low number of differences are displayed here.
 
-FIGURE 9
+![](images/fig9_neighbours.png)
 
 The display of neighbors follows the same concept as the summary of matches (see 4.3. Details) and includes all mitotypes that are at a distance to the query sequence of one and two differences (“events”).
 An “Event” refers to the biological meaning of any difference but not the absolute number of differing nucleotides. As such, a tandem deletion (or insertion) in the AC-repeat region between 514 and 524 is regarded as one event, and therefore one difference between otherwise matching mitotypes. The same rationale applies to the 6 bp Chibcha deletion between 105 and 110 or 106 and 111, the 9 bp deletion between 8281 and 8290, as well as other (less abundant) block indels in the mitochondrial genome.
@@ -174,7 +175,7 @@ Mutations specifies differences between query and database mitotypes, which are 
 ### 4.5. Alignment
 Since EMPOP 4 the phylogenetic alignment is displayed as illustrated in Figure 10 below:
 
-FIGURE 10
+![](images/fig10_alignment.png)
 
 ### 4.6. Haplogrouping
 The assignment of haplogroups to mitotypes contributes substantial value for quality control, not only in forensic genetics but also in population and medical genetics. The availability of Phylotree, a widely accepted phylogenetic tree of human mitochondrial DNA lineages, led to the development of several (semi-)automated software solutions for haplogrouping. However, the currently existing tools only make use of haplogroup-defining mutations, whereas private mutations (beyond the haplogroup level) can be additionally informative allowing for enhanced haplogroup assignment.
