@@ -69,8 +69,9 @@ Differences to the revised Cambridge Reference Sequence (rCRS, Andrews et al 199
 |     Insertions      |     315.1C     -315.1C     315+C     309.1C     309.2C     309+CC    |     For multiple insertions all preceding insertions need to be stated,   i.e. annotating 309.2C is not possible without annotating 309.1C                                                                                                                                                               |
 |     Deletions       |     249-     A249-     249delA     249del                            |     'del' is treated case insensitive, e.g. Del, DEL, dEL, deL etc is   accepted.     Please note that the single character 'D' is considered a mixture of   A, G, and T (IUB code). The single character 'd' is considered a mixture of   A, G, T, and deletion (see Parson et al 2014 for details).    |
 
-⚠️ Note that the EMPOP query discerns capital letters (A,G, C, T, Y, …) from uncapitalized letters (a, g, c, t, y, …).
-⚠️ Uncapizalized letters stand for a mixture of a deletion and a non-deleted variant. E.g. T152c represents two variants, T152C and T152del. 
+❗ Note that the EMPOP query discerns capital letters (A,G, C, T, Y, …) from uncapitalized letters (a, g, c, t, y, …).
+
+❗ Uncapizalized letters stand for a mixture of a deletion and a non-deleted variant. E.g. T152c represents two variants, T152C and T152del. 
 
 
 #### 4.1.4. Release
