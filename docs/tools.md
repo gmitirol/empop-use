@@ -6,7 +6,7 @@ The EMPOP tools section provides a suite of software to support the analysis and
 This tool represents the established most recent Phylotree haplogroups in convenient searchable format and provides the number of EMPOP sequences assigned to the respective haplogroups by SAM2. Note that EMPOP provides the MRCA haplogroup if multiple haplogroup assignments are feasible. 
 Individual haplogroups can also be found by querying differences to the rCRS in a database of > 20.000 mtGenome sequences.
 
-FIGURE 12
+![](images/fig12_populations.png)
 
 ### 6.2.	EMPcheck
 EMPcheck is a tool to perform plausibility checks on an rCRS-coded data table.
@@ -78,7 +78,7 @@ Submit starts the execution.
 After clicking on the Submit Button, the network calculation is initiated. Depending on the size of the file and the used filter options this process may take some time.
 When finished, result files will be listed in “Network Result Files” on the “your account” page.
 
-FIGURE 13
+![](images/fig13_network.png)
 
 Download the file and unzip it to obtain the folder [RID_FILTERNAME_REGION], which contains the following files:
 - Results file [FILENAME_report.txt]: This file summarizes the settings and the results of the network analysis - for details see chapter Interpretation. 
