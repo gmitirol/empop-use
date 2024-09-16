@@ -12,6 +12,6 @@ The first seven years of the EMPOP project aimed at
 
 1. identifying the sources and reasons for these errors ([Bandelt et al 2006](https://10.1007/3-540-31789-9_4)),
 2. developing software tools to picture those ([Zimmermann et al 2014](https:// 10.3325/cmj.2014.55.115)) and
-3. develop laboratory protocols for the generation of high-quality mtDNA data (Nairobi, Berger).
+3. develop laboratory protocols for the generation of high-quality mtDNA data  ([Brandstätter et al 2004](https://doi.org/10.1007/s00414-004-0466-z); [Berger et al 2009](https://doi.org/10.1007/s00414-004-0466-z)).  
  
 In 2006, the first version of EMPOP went online. Since 2010 the leading forensic (genetic) journals require authors to have their mtDNA data quality controlled via EMPOP prior to submission of their manuscript for peer review (details can be found under CONTRIBUTE). This has led to significant improvement of published data quality in forensic genetics. With the emergence of Next Generation Massively Parallel Sequencing (MPS) technologies forensically oriented laboratory protocols were developed (PEC, caphyb) and commercial products made available (2x TFS, VEROGEN, Promega, NIMAGEN).
