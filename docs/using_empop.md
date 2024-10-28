@@ -141,7 +141,7 @@ The Details tab provides a more detailed presentation of the matching mitotypes.
 
 EMPOP provides a summary table of all matching mitotypes that meet the queried sequence range. Columns can be sorted by clicking on the column headers.
 Geographic and metapopulation origins can be filtered using the text boxes.
-Ignored mutations list the differences between database and query sequences that were disregarded for the search (see 4.1.7. Disregard InDels ). The values in brackets display the costs of the listed mutation (details see Huber et al 2018).
+Ignored mutations list the differences between database and query sequences that were disregarded for the search (see 4.1.7. Disregard InDels ). The values in brackets display the costs of the listed mutation. For details see [Huber et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30241075/).
 Haplogroup indicates the samples’ haplogroup assignment. In case of a database match, there is no need to estimate the haplogroup as this column simply indicates the haplogroup of the matching samples. Rank 1 displays the haplogroup estimate with lowest costs (including a tolerance of 0.1) and Rank 2 displays the haplogroup estimate with the next lowest costs (including a tolerance of 0.1).
 
 4.3.2. When no matches are found
@@ -166,7 +166,7 @@ The display of neighbors follows the same concept as the summary of matches (see
 An “Event” refers to the biological meaning of any difference but not the absolute number of differing nucleotides. As such, a tandem deletion (or insertion) in the AC-repeat region between 514 and 524 is regarded as one event, and therefore one difference between otherwise matching mitotypes. The same rationale applies to the 6 bp Chibcha deletion between 105 and 110 or 106 and 111, the 9 bp deletion between 8281 and 8290, as well as other (less abundant) block indels in the mitochondrial genome.
 Additional information is provided with regard to differences between query mitotype and neighbors. These are listed in the columns cost, count and mutations.
 
-Costs are determined by the change from the base profile symbol to the test profile symbol (approximately 1.0 for an average mutation). See Huber et al 2018 for further details.
+Costs are determined by the change from the base profile symbol to the test profile symbol (approximately 1.0 for an average mutation). See [Huber et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30241075/) for further details.
 
 Count lists the number of mutational events between query and database mitotypes.
 Note that some combined mutations are single events, e.g. 523del 524del or 106-111del and treated as such in EMPOP.
@@ -181,5 +181,5 @@ Since EMPOP 4 the phylogenetic alignment is displayed as illustrated below:
 ### 4.6. Haplogrouping
 The assignment of haplogroups to mitotypes contributes substantial value for quality control, not only in forensic genetics but also in population and medical genetics. The availability of Phylotree, a widely accepted phylogenetic tree of human mitochondrial DNA lineages, led to the development of several (semi-)automated software solutions for haplogrouping. However, the currently existing tools only make use of haplogroup-defining mutations, whereas private mutations (beyond the haplogroup level) can be additionally informative allowing for enhanced haplogroup assignment.
 
-The scientific publication is currently under preparation, details will follow later. 
+For details see [Huber et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30241075/).
 
