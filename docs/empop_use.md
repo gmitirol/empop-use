@@ -494,8 +494,7 @@ haplogroup-defining mutations, whereas private mutations (beyond the
 haplogroup level) can be additionally informative allowing for enhanced
 haplogroup assignment.
 
-The scientific publication is currently under preparation, details will
-follow later.
+Details are published in [Huber et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30241075/).
 
 # 5. Browsing EMPOP for populations
 
@@ -530,7 +529,7 @@ EMPcheck is a tool to perform plausibility checks on an rCRS-coded data
 table.
 
 The file format must meet the requirements described below and in
-[Carracedo et al 2014](http://www.ncbi.nlm.nih.gov/pubmed/24503419).
+[Carracedo et al. (2014)](http://www.ncbi.nlm.nih.gov/pubmed/24503419).
 
 **Structure of the emp-file**
 
