@@ -17,7 +17,7 @@ EMPOP stores anonymized mitotypes that are not linked to any personal informatio
 
 
 ### 2.1	 Mitotype submission and quality control
-Anonymized population data are contributed to EMPOP by international research groups. All data submissions must comply with the ethical regulations of the countries where the samples were collected and analyzed. This includes providing documentation from the respective Ethics Boards and Informed Consent Forms. The process is guided by recommendations outlined in the Report of the [Forensic Database Advisory Board(https://doi.org/10.1016/j.fsigen.2024.103053)].
+Anonymized population data are contributed to EMPOP by international research groups. All data submissions must comply with the ethical regulations of the countries where the samples were collected and analyzed. This includes providing documentation from the respective Ethics Boards and Informed Consent Forms. The process is guided by recommendations outlined in the Report of the [Forensic Database Advisory Board](https://doi.org/10.1016/j.fsigen.2024.103053).
 
 The individual mitotypes undergo rigorous quality control (QC) using plausibility checks and investigations based on phylogenetic and population genetic principles. Unobserved and ambiguous variation is scrutinized using the sequencing raw data in dialogue with the data submitters. The mitotypes are further examined with respect to alignment and haplogroup assignment (fine-tuned) and corrected if needed. The final dataset passing QC is shared with the submitters along with an EMPOP QC report and an EMPOP accession number that is used to document the successful QC process for later dissemination (e.g., publication).
 
