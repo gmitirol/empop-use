@@ -2,10 +2,9 @@
 
 EMPOP adheres to the revised and extended guidelines for mitochondrial DNA typing as issued by the DNA Commission of the ISFG [Parson et al., 2014](http://dx.doi.org/10.1016/j.fsigen.2014.07.010). For further details, please refer to the referenced document.
 
-**EMPOP’s query engine - SAM 2**
+**EMPOP’s Query Engine - SAM 2**
 
-EMPOP uses SAM 2, an updated and optimized software based on tests with carefully curated full mitogenome sequences to perform unbiased and conservative database queries to assist statistical evaluation of the evidence in forensic practice.
-The major changes to the earlier version of the software SAM (Röck et al 2011) include:
+EMPOP employs SAM 2, an updated and optimized software developed through rigorous testing with carefully curated full mitogenome sequences. This software performs unbiased and conservative database queries to support the statistical evaluation of evidence in forensic practice. Key improvements over the earlier version of SAM [Röck et al., 2011](https://doi.org/10.1016/j.fsigen.2010.10.006) include:
 
 1. updated alignment/nomenclature conventions for the phylogenetically instable regions 50-70, 310-316, 455-460, 961-966, 8276-8279, 16180-16193, and 16258-16262
 2. *count* and *cost* search modes for neighbours
