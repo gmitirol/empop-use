@@ -43,6 +43,6 @@ The scientific framework and quality control measures implemented in EMPOP have 
 
 
 The scientific contents presented in EMPOP were developed by the
-[Institute of Legal Medicine (GMI)](http://www.gmi.eu), Medical
+[Institute of Legal Medicine (GMI)](https://genomics.gmi.tirol/), Medical
 University of Innsbruck and the [Institute of Mathematics, University of
 Innsbruck](http://www.uibk.ac.at/mathematik/index.html.de).
