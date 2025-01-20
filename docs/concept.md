@@ -1,22 +1,23 @@
 ## 2. Concept
 
-**EMPOP serves three functions:**
+**Main functions of EMPOP**
 
-1)	Frequency dataset to estimate the rarity of mitotypes in the population
-2)	Resource to depict distribution of mtDNA haplogroups
-3)	Tool to examine the quality of an mtDNA dataset
+1)	Estimate the frequecy of a mitotype in a given population
+2)	Check mitotype alignment
+3)	Estimate haplogroup and evaluate its distribution
+4)	Examine the quality of a mitotype/an mtDNA dataset
 
-EMPOP holds anonymized mitotypes that are not connected to any personal data of the sample donors. Only the country of origin and the self-assigned metapopulation of the sample donors are provided through an EMPOP query.
+EMPOP stores anonymized mitotypes that are not linked to any personal information about the sample donors. Through an EMPOP query, only the country of origin and the self-reported metapopulation of the sample donors are accessible.
 
-⚠️ EMPOP cannot be used to re-identify the sample donor.
+⚠️ EMPOP cannot be used to re-identify the sample donor
 
-⚠️ EMPOP does not support the provision of evidentiary leads.
+⚠️ EMPOP does not provide evidentiary leads
 
-⚠️ Data cannot be downloaded from EMPOP.
+⚠️ Data cannot be downloaded from EMPOP
 
 
-### 2.1	 MtDNA data submission and quality control
-Anonymized population data are provided to EMPOP by international research groups. Data submissions must follow ethical regulations of the countries where the samples were taken and where the analyses were performed and include documentation of the respective Ethics Board(s) and Informed Consent Forms. Guidance is provided by the Report of the Forensic Database Advisory Board. 
+### 2.1	 Mitotype submission and quality control
+Anonymized population data are contributed to EMPOP by international research groups. All data submissions must comply with the ethical regulations of the countries where the samples were collected and analyzed. This includes providing documentation from the respective Ethics Boards and Informed Consent Forms. The process is guided by recommendations outlined in the Report of the Forensic Database Advisory Board(https://doi.org/10.1016/j.fsigen.2024.103053).
 
 The individual mitotypes undergo rigorous quality control (QC) using plausibility checks and investigations based on phylogenetic and population genetic principles. Unobserved and ambiguous variation is scrutinized using the sequencing raw data in dialogue with the data submitters. The mitotypes are further examined with respect to alignment and haplogroup assignment (fine-tuned) and corrected if needed. The final dataset passing QC is shared with the submitters along with an EMPOP QC report and an EMPOP accession number that is used to document the successful QC process for later dissemination (e.g., publication).
 
