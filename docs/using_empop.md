@@ -1,6 +1,6 @@
 ## 4. Using EMPOP for mitotype searches
 
-EMPOP follows the revised and extended guidelines for mitochondrial DNA typing issued by the DNA commission of the ISFG (Parson et al. 2014). See document for further details.
+EMPOP adheres to the revised and extended guidelines for mitochondrial DNA typing as issued by the DNA Commission of the ISFG [Parson et al., 2014](http://dx.doi.org/10.1016/j.fsigen.2014.07.010). For further details, please refer to the referenced document.
 
 **EMPOP’s query engine - SAM 2**
 
