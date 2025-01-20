@@ -43,7 +43,7 @@ EMPOP employs SAM 2, an updated and optimized software developed through rigorou
 |     29     |     16006                 |     16006.1-16006.3       |     CTA                |     3                 |
 
 ### 4.1 Query Options
-![](images/fig2_query_input.png)
+![](images/FigQuery.tiff)
 
 #### 4.1.1. Sample ID
 Use this field to enter the ID of a mitotype. Search results are linked to this information and also provided on printouts. Sample IDs are used to identify queries in the search history of each individual user.
