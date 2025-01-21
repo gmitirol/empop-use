@@ -113,6 +113,7 @@ Length heteroplasmy is located in known hotspots (homopolymeric tracts) for inse
 
 - **Coding Region:**
   Length variants near positions 960, 5899, 8276, and 8285
+  
 
 |     Length variant    |     5’ junction    |     3’ junction    |     Repeating motif    |
 |-----------------------|--------------------|--------------------|------------------------|
