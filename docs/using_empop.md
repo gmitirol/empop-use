@@ -56,7 +56,6 @@ It is important to note that EMPOP relies on the sequence range provided by the 
 Note that the omission of sequence information within a specified range will be interpreted as rCRS-based data. This can result in artificial recombination, potentially impacting the accuracy of analyses. Further details, see in e.g., [Bandelt et al, 2004](https://doi.org/10.1007/s00414-004-0455-2).
 
 #### 4.1.3. Mitotype
-
 - **Format Options**: Query your mitotype either as FASTA-like sequence string or reported relative to the [revised Cambridge Reference Sequence (rCRS)](https://doi.org/10.1038/13779).
 
 - **FASTA-like string**: 
@@ -81,14 +80,29 @@ Note that the omission of sequence information within a specified range will be 
 |     Insertions      |     315.1C     -315.1C     315+C     309.1C     309.2C     309+CC    |     For multiple insertions all preceding insertions need to be stated, e.g., annotating 309.2C is not possible without 309.1C                                                                                                                                                               |
 |     Deletions       |     249-     A249-     249delA     249del                            |     'del' is treated case insensitive, e.g. Del, DEL, dEL, deL etc is   accepted. Note that the single character 'D' is considered a mixture of A, G, and T (IUPAC).
 
-#### 4.1.4. Release
-EMPOP 4 offers release-specific queries. The most recent database release is selected by default. Earlier database releases can be selected if available. 
+#### 4.1.4. Finding neighbors
+EMPOP provides two methods for searching neighbors: by **count** and by **cost**. Under the current settings, EMPOP identifies neighbors with:
 
-#### 4.1.5. Find neighbors
-EMPOP offers searching for neighbors by count and by cost. Under current settings EMPOP reports neighbors within a count of 2 differences or costs of 5.34 see ([Huber et al 2018](https:// 10.1016/j.fsigen.2018.09.001)).
-Finding neighbors by count is the default setting for forensic frequency estimates.
+    A count difference of up to **2**.
+    A cost threshold of **5.34** (find details on cost estimation in [Huber et al, 2018](https:// 10.1016/j.fsigen.2018.09.001).
 
-#### 4.1.6. Match type
+The default setting for forensic frequency estimates is **neighbor search by count**.
+
+#### 4.1.5. Match type
+Match type settings are relevant for the mode of querying point heteroplasmy
+
+    **Pattern Match:** Mixture designations match their individual components.
+    Example: Y = {C, T, Y}.
+    A query of 152Y will match both 152T and 152C.
+
+    Literal Match: Mixture designations are treated as exclusive, matching only their specific designation.
+    Example: Y = {Y}.
+    A query of 152Y will match only 152Y.
+
+Default Setting: The pattern match method is the default setting for forensic frequency estimates.
+
+
+
 This is relevant for the consideration of point heteroplasmy in both the query sequence as well as the database sequences.
 *Pattern match:* mixture designations match its individual components (Y={C,T,Y}). Example: 152Y matches 152T and 152C.
 *Literal match:* mixture designations are considered exclusive to all other nucleotide designations (Y={Y}). Example: 152Y matches only 152Y.
