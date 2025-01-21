@@ -149,13 +149,14 @@ CI from zero pop
 
 Where x… number of matches and n… database size.
 
+
 **Range-Dependent Inclusion of Mitotypes in Query Results:**
 
 The number of mitotypes included in a query result depends on the specified sequence range. Only database mitotypes whose sequence range overlaps with the query range will be considered.
 
   **Example:** A query with the range **16024–576** includes all database sequences typed for the entire **control region**. However, **HVS-I/II** data (e.g., 16024–16365 and 73–340) would not be included in such a query.
 
-To ensure **comprehensive results**, it may be prudent to perform an additional query using standard HVS-I/II sequence ranges (e.g., 16024–16365 and 73–340).
+  To ensure **comprehensive results**, it may be prudent to perform an additional query using standard HVS-I/II sequence ranges (e.g., 16024–16365 and 73–340).
 
 ❗ **Note:**
 The numbers of matches listed under **Origin** represent the **total** number of matches in the database.
