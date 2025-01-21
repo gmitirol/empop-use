@@ -49,7 +49,7 @@ EMPOP employs SAM 2, an updated and optimized software developed through rigorou
 Use this field to enter the ID of a mitotype. The search results will be linked to this ID and included in any printouts. Sample IDs also serve to track and identify user queries in the search history, ensuring efficient and personalized access to information.
 
 #### 4.1.2. Ranges	
-Database queries require the specification of interpretation ranges for rCRS-coded and FASTA-like string mitotypes. Commonly used ranges include HVS-I (16024–16365), HVS-II (73–340), CR (16024–576), and the entire mitogenome (ALL). Individual SNPs can also be queried by specifying the SNP in the range field (e.g., 3010). 
+Database queries require the specification of interpretation ranges for rCRS-coded and FASTA-like string mitotypes. Commonly used ranges include HVS-I (16024–16365), HVS-II (73–340), CR (16024–576), and the entire mitogenome **(ALL)**. Individual SNPs can also be queried by specifying the SNP in the range field (e.g., 3010). 
 
 It is important to note that EMPOP relies on the sequence range provided by the submitting laboratory. As a result, these ranges may vary slightly across different submissions or populations. 
 
@@ -133,29 +133,34 @@ Length heteroplasmy is located in known hotspots (homopolymeric tracts) for inse
 **Standard query settings** disregard discrepancies in hotspot length variant regions between query and database sequences.
 
 ### 4.2. Result
-The execution of a database query automatically directs the user to the Results tab. Sample ID, query range(s) and mitotype are indicated in the top lines. Following information is listed in the results table:
+The execution of a database query automatically directs the user to the Results tab. Sample ID, query range(s) and mitotype are indicated in the header. The following information is listed in the results table:
  
-1.	number of observed matches in the entire database
-2.	number of observed matches sorted by geographic origin and
-3.	number of observed matches by metapopulation affiliation
+- total number of observed matches in the entire database
+- number of observed matches sorted by geographic origin
+- number of observed matches by metapopulation affiliation
 
-![](images/fig4_query_result.png)
+![](images/V4R14-FigResult.png)
 
-An uncorrected frequency estimate is provided including a two-tailed Clopper Pearson confidence interval. Correction for sampling bias is provided and alternative methods to calculate probabilities are provided in the drop-down box to the right. P values can be estimated based on following formulas:
+An uncorrected frequency estimate is provided including a two-tailed Clopper Pearson confidence interval. Probabilities can be estimated using the following options (drop-down box):
 
-1.	(x+1)/(n+1)
-2.	(x+2)/(n+2)
-3.	CI from zero pop
+(x+1)/(n+1)
+(x+2)/(n+2)
+CI from zero pop
 
-Where x… number of database hits and n… database size
+Where x… number of matches and n… database size.
 
-Free text searches are possible for origin and metapopulation to address the relevant subset of the database. This depends on the formulation of the hypothesis, e.g. the reduction of the dataset to the country of Spain.
+**Range-Dependent Inclusion of Mitotypes in Query Results:**
 
-Note that the number of mitotypes included in a query result depends on the indicated sequence range. Only mitotypes with overlapping sequence ranges to the query sequence are considered. E.g. the query range 16024-576 includes all database sequences that were typed for the entire control region. HVS-I/II data (16024-16365 73-340) are not included in such a query. It may therefore be conservative to also perform a query with standard HVS-I/II sequence ranges.
+The number of mitotypes included in a query result depends on the specified sequence range. Only database mitotypes whose sequence range overlaps with the query range will be considered.
 
-Below the tabular representation of the database query an interactive map can be found that depicts the sampled populations within the query range (red) and the matches in the sampled populations (green).
+  **Example:** A query with the range **16024–576** includes all database sequences typed for the entire **control region**. However, **HVS-I/II** data (e.g., 16024–16365 and 73–340) would not be included in such a query.
 
-![](images/fig5_map.png)
+To ensure **comprehensive results**, it may be prudent to perform an additional query using standard HVS-I/II sequence ranges (e.g., 16024–16365 and 73–340).
+
+❗ **Note:**
+The numbers of matches listed under **Origin** represent the **total** number of matches in the database.
+The numbers of matches under **Metapopulation** may exceed the total database matches because some metapopulations are **subsets** of others.
+For example, **US Caucasian** is a sub-metapopulation of **Westeurasian**.
 
 ### 4.3. Details
 The Details tab provides a more detailed presentation of the matching mitotypes.
