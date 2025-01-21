@@ -80,36 +80,39 @@ Note that the omission of sequence information within a specified range will be 
 |     Insertions      |     315.1C     -315.1C     315+C     309.1C     309.2C     309+CC    |     For multiple insertions all preceding insertions need to be stated, e.g., annotating 309.2C is not possible without 309.1C                                                                                                                                                               |
 |     Deletions       |     249-     A249-     249delA     249del                            |     'del' is treated case insensitive, e.g. Del, DEL, dEL, deL etc is   accepted. Note that the single character 'D' is considered a mixture of A, G, and T (IUPAC).
 
-#### 4.1.4. Finding neighbors
+#### 4.1.4. Find neighbors
 EMPOP provides two methods for searching neighbors: by **count** and by **cost**. Under the current settings, EMPOP identifies neighbors with:
-
-    A count difference of up to **2**.
-    A cost threshold of **5.34** (find details on cost estimation in [Huber et al, 2018](https:// 10.1016/j.fsigen.2018.09.001).
+- A **count** difference of up to **2**.
+- A **cost** threshold of **5.34** (find details on cost estimation in [Huber et al, 2018](https://10.1016/j.fsigen.2018.09.001).
 
 The default setting for forensic frequency estimates is **neighbor search by count**.
 
 #### 4.1.5. Match type
-Match type settings are relevant for the mode of querying point heteroplasmy
+Match type settings are relevant for the mode of querying **point heteroplasmy**.
 
-    **Pattern Match:** Mixture designations match their individual components.
-    Example: Y = {C, T, Y}.
-    A query of 152Y will match both 152T and 152C.
+- **Pattern Match:** Mixture designations match all their individual components.
+  Example: Y = {C, T, Y}
+  A query of 152Y matches both T152 and 152C
 
-    Literal Match: Mixture designations are treated as exclusive, matching only their specific designation.
-    Example: Y = {Y}.
-    A query of 152Y will match only 152Y.
+- **Literal Match:** Mixture designations are treated as exclusive, matching only their specific designation.
+  Example: Y = {Y}
+  A query of 152Y matches only 152Y
 
-Default Setting: The pattern match method is the default setting for forensic frequency estimates.
+The default setting for forensic frequency estimates is **pattern match**.
 
+#### 4.1.6. Disregard InDels 
+These settings are relevant for the mode of querying **length heteroplasmy**.
 
+Length heteroplasmy is located in known hotspots (homopolymeric tracts) for insertions and deletions (indels). They should be excluded from standard forensic database queries. These include:
 
-This is relevant for the consideration of point heteroplasmy in both the query sequence as well as the database sequences.
-*Pattern match:* mixture designations match its individual components (Y={C,T,Y}). Example: 152Y matches 152T and 152C.
-*Literal match:* mixture designations are considered exclusive to all other nucleotide designations (Y={Y}). Example: 152Y matches only 152Y.
-Pattern match is the default setting for forensic frequency estimates.
+- **Control Region:**
+  C-runs near positions 16193, 309, 463, and 573
+  The T-run near position 455
 
-#### 4.1.7. Disregard InDels 
-Length variants that are known hotspots for insertion/deletions (indels) should be ignored in a forensic database query. This involves the C-runs around positions 16193, 309, 463 and 573 and the T-run around position 455 relative to the rCRS in the control region. In the coding region length variants around positions 960, 5899, 8276 and 8285 are ignored for a forensic query.
+  ❗ Note: The C-insertion downstream of nucleotide position 315, i.e., 315.1C, 315+C, is not a length heteroplasmic variant but a phylogenetically stable insertion relative to the rCRS.
+
+- **Coding Region:**
+  Length variants near positions 960, 5899, 8276, and 8285
 
 |     Length variant    |     5’ junction    |     3’ junction    |     Repeating motif    |
 |-----------------------|--------------------|--------------------|------------------------|
@@ -126,8 +129,7 @@ Length variants that are known hotspots for insertion/deletions (indels) should 
 
 ❗ Note that the C-insertion between 310 and 316 is a stable length variant, not a length hotspot. It is listed here for uninterrupted C-runs as a consequence of T310C.
 
-Standard query settings disregard discrepancies in hotspot length variant regions between query and database sequences.
-Note that costs of disregarded InDels do not contribute to the final costs, which influences the ranking of results. See section 4.4. Neighbors.
+**Standard query settings** disregard discrepancies in hotspot length variant regions between query and database sequences.
 
 ### 4.2. Result
 The execution of a database query automatically directs the user to the Results tab. Sample ID, query range(s) and mitotype are indicated in the top lines. Following information is listed in the results table:
