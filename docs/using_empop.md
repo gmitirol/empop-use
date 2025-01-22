@@ -4,11 +4,11 @@ EMPOP adheres to the revised and extended guidelines for mitochondrial DNA typin
 
 **EMPOP’s Query Engine - SAM 2**
 
-EMPOP employs SAM 2, an updated and optimized software developed through rigorous testing with carefully curated full mitogenome sequences. This software performs unbiased and conservative database queries to support the statistical evaluation of evidence in forensic practice. Key improvements over the earlier version of SAM [Röck et al, 2011](https://doi.org/10.1016/j.fsigen.2010.10.006) include:
+EMPOP employs SAM 2, an updated and optimized software developed through rigorous testing with carefully curated full mitogenome sequences. This software performs unbiased and conservative database queries to support the statistical evaluation of evidence in forensic practice. Key improvements over the earlier version of SAM [Röck et al., 2011](https://doi.org/10.1016/j.fsigen.2010.10.006) include:
 
 1. updated alignment/nomenclature conventions for the phylogenetically instable regions 50-70, 310-316, 455-460, 961-966, 8276-8279, 16180-16193, and 16258-16262
-2. *count* and *cost* search modes for neighbours
-3. implementation of 28 block indels containing between 2 and 264 base-pairs
+2. *count* and *cost* search modes for neighbors
+3. implementation of 28 block indels between 2 and 264 base-pairs
 
 |     No.    |     Insertion position    |     Deletion positions    |     Pattern            |     Length [in bp]    |
 |------------|---------------------------|---------------------------|------------------------|-----------------------|
@@ -49,11 +49,20 @@ EMPOP employs SAM 2, an updated and optimized software developed through rigorou
 Use this field to enter the ID of a mitotype. The search results will be linked to this ID and included in any printouts. Sample IDs also serve to track and identify user queries in the search history, ensuring efficient and personalized access to information.
 
 #### 4.1.2. Ranges	
-Database queries require the specification of interpretation ranges for rCRS-coded and FASTA-like string mitotypes. Commonly used ranges include HVS-I (16024–16365), HVS-II (73–340), CR (16024–576), and the entire mitogenome **(ALL)**. Individual SNPs can also be queried by specifying the SNP in the range field (e.g., 3010). 
+Database queries require the specification of interpretation ranges for rCRS-coded and FASTA-like string mitotypes. Commonly used ranges include
+- HVS-I (16024–16365),
+- HVS-II (73–340),
+- CR (16024–576),
+- ALL (= 1-16569, the entire mitogenome)
 
-It is important to note that EMPOP relies on the sequence range provided by the submitting laboratory. As a result, these ranges may vary slightly across different submissions or populations. 
+Individual SNPs can also be queried by specifying the SNP in the range field (e.g., 3010). 
 
-Note that the omission of sequence information within a specified range will be interpreted as rCRS-based data. This can result in artificial recombination, potentially impacting the accuracy of analyses. Further details, see in e.g., [Bandelt et al, 2004](https://doi.org/10.1007/s00414-004-0455-2).
+| :exclamation:  It is important to note that EMPOP relies on the sequence range provided by the submitting laboratory.   |
+|-----------------------------------------|
+
+As a result, these ranges may vary slightly across different submissions or populations. 
+
+Note that the omission of sequence information within a specified range will be interpreted as rCRS-based data. This can result in artificial recombination, potentially impacting the accuracy of analyses. Further details, see in e.g., [Bandelt et al., 2004](https://doi.org/10.1007/s00414-004-0455-2).
 
 #### 4.1.3. Mitotype
 - **Format Options**: Query your mitotype either as FASTA-like sequence string or reported relative to the [revised Cambridge Reference Sequence (rCRS)](https://doi.org/10.1038/13779).
@@ -82,8 +91,9 @@ Note that the omission of sequence information within a specified range will be 
 
 #### 4.1.4. Find neighbors
 EMPOP provides two methods for searching neighbors: by **count** and by **cost**. Under the current settings, EMPOP identifies neighbors with:
+
 - A **count** difference of up to **2**.
-- A **cost** threshold of **5.34** (find details on cost estimation in [Huber et al, 2018](https://10.1016/j.fsigen.2018.09.001).
+- A **cost** threshold of **5.34** (find details on cost estimation in [Huber et al., 2018](https://10.1016/j.fsigen.2018.09.001).
 
 The default setting for forensic frequency estimates is **neighbor search by count**.
 
@@ -106,8 +116,8 @@ These settings are relevant for the mode of querying **length heteroplasmy**.
 Length heteroplasmy is located in known hotspots (homopolymeric tracts) for insertions and deletions (indels). They should be excluded from standard forensic database queries. These include:
 
 - **Control Region:**
-  C-runs near positions 16193, 309, 463, and 573
-  The T-run near position 455
+  - C-runs near positions 16193, 309, 463, and 573
+  - T-run near position 455
 
   ❗ Note: The C-insertion downstream of nucleotide position 315, i.e., 315.1C, 315+C, is not a length heteroplasmic variant but a phylogenetically stable insertion relative to the rCRS.
 
@@ -133,7 +143,7 @@ Length heteroplasmy is located in known hotspots (homopolymeric tracts) for inse
 **Standard query settings** disregard discrepancies in hotspot length variant regions between query and database sequences.
 
 ### 4.2. Result
-The execution of a database query automatically directs the user to the Results tab. Sample ID, query range(s) and mitotype are indicated in the header. The following information is listed in the results table:
+The execution of a database query automatically directs the user to the **RESULTS** tab. Sample ID, query range(s) and mitotype are indicated in the header. The following information is listed in the results table:
  
 - total number of observed matches in the entire database
 - number of observed matches sorted by geographic origin
@@ -142,6 +152,7 @@ The execution of a database query automatically directs the user to the Results 
 ![](images/V4R14-FigResult.png)
 
 An uncorrected frequency estimate is provided including a two-tailed Clopper Pearson confidence interval. Probabilities can be estimated using the following options (drop-down box):
+
 - (x+1)/(n+1)
 - (x+2)/(n+2)
 - CI from zero pop
@@ -150,6 +161,7 @@ Where x… number of matches and n… database size.
 
 
 **Range-Dependent Inclusion of Mitotypes in Query Results:**
+
 The number of mitotypes included in a query result depends on the **specified sequence range(s)**. Only database mitotypes whose sequence range(s) overlap with the query range will be considered.
 
 - **Example:** A query with the range **16024–576** includes all database sequences typed for the entire **control region**. However, **HVS-I/II** data (e.g., 16024–16365 and 73–340) would not be included in such a query. To ensure **comprehensive results**, it may be prudent to perform an additional query using standard HVS-I/II sequence ranges (e.g., 16024–16365 and 73–340).
@@ -169,8 +181,9 @@ When **no matches** are found the **Details** tab stays empty.
 
 ### 4.4. Neighbors
 Displays database mitotypes that differ from the query mitotype by:
+
 - Up to **two** differences (count) or
-- Costs of up to **5.34** (find details on cost estimation in [Huber et al, 2018](https://10.1016/j.fsigen.2018.09.001)).
+- Costs of up to **5.34** (find details on cost estimation in [Huber et al., 2018](https://10.1016/j.fsigen.2018.09.001)).
   
 
 ![](images/V4R14-FigNeighbors.png)
@@ -178,13 +191,12 @@ Displays database mitotypes that differ from the query mitotype by:
 
 The neighbors' display follows the same principles as the summary of matches (refer to 4.3. Details). Differences between query and database mitotypes are treated as (biological) **events**.
 
-- Definition of an **Event**:
-    An **event** reflects the biological significance of a difference, rather than the absolute number of differing nucleotides.
+Definition of an **Event**: An **event** reflects the biological significance of a difference, rather than the absolute number of differing nucleotides.
 
-- **Examples**:
--   A tandem deletion (or insertion) in the AC-repeat region between positions 514–524 is considered one event, representing a single difference between otherwise matching mitotypes, i.e., 523del 524del, 524.1A 524.2C, etc ...
--   The 6 bp "Chibcha" deletion between positions 105–110 or 106–111 is considered on event.
--   The 9 bp deletion between positions 8281–8290 is considered on event.
+**Examples**:
+- A tandem deletion (or insertion) in the AC-repeat region between positions 514–524 is considered one event, representing a single difference between otherwise matching mitotypes, i.e., 523del 524del, 524.1A 524.2C, etc ...
+- The 6 bp "Chibcha" deletion between positions 105–110 or 106–111 is considered one event.
+- The 9 bp deletion between positions 8281–8290 is considered one event.
 
 Additional Information:
 - Differences between the query mitotype and its neighbors are detailed in the following columns:
@@ -192,7 +204,7 @@ Additional Information:
 - Count: Indicating the total number of differences (events).
 - (missing) variants: Specifying the exact nucleotide differences.
 
-Costs are estimated by the change from the database mitotype symbol to the query mitotype symbol (approx. 1.0 for an average transition; ee [Huber et al, 2018](https://pubmed.ncbi.nlm.nih.gov/30241075/) for further details).
+Costs are estimated by the change from the database mitotype symbol to the query mitotype symbol (approx. 1.0 for an average transition; see [Huber et al, 2018](https://pubmed.ncbi.nlm.nih.gov/30241075/) for further details).
 
 
 ### 4.5. Alignment
@@ -204,5 +216,5 @@ The phylogenetic alignment ([Bandelt and Parson, 2007](https://doi.org/10.1007/s
 ### 4.6. Haplogrouping
 Haplogrouping introduces a new algorithm specifically developed for the alignment and the haplogroup estimation of human mtDNA sequences. The original 5435 haplogroup motifs (Phylotree Build 17) were refined without altering haplogroup nomenclature. We adapted 430 motifs (8%) and added 966 motifs for new subclades, resulting in an 18% increase in haplogroup defining motifs for full mitogenomes and a 30% increase for the mtDNA control region.
 
-For details see [Dür et al, 2021](https://doi.org/10.3390/ijms22115747).
+For details see [Dür et al., 2021](https://doi.org/10.3390/ijms22115747).
 
