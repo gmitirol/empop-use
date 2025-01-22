@@ -168,25 +168,38 @@ When **no matches** are found the **Details** tab stays empty.
 
 
 ### 4.4. Neighbors
-Similar sequences with a low number of differences are displayed here.
+Displays database mitotypes that differ from the query mitotype by:
+- Up to **two** differences (count) or
+- Costs of up to **5.34** (find details on cost estimation in [Huber et al, 2018](https://10.1016/j.fsigen.2018.09.001)).
+  
 
-![](images/fig9_neighbours.png)
+![](images/V4R14-FigNeighbors.png)
 
-The display of neighbors follows the same concept as the summary of matches (see 4.3. Details) and includes all mitotypes that are at a distance to the query sequence of one and two differences (“events”).
-An “Event” refers to the biological meaning of any difference but not the absolute number of differing nucleotides. As such, a tandem deletion (or insertion) in the AC-repeat region between 514 and 524 is regarded as one event, and therefore one difference between otherwise matching mitotypes. The same rationale applies to the 6 bp Chibcha deletion between 105 and 110 or 106 and 111, the 9 bp deletion between 8281 and 8290, as well as other (less abundant) block indels in the mitochondrial genome.
-Additional information is provided with regard to differences between query mitotype and neighbors. These are listed in the columns cost, count and mutations.
 
-Costs are determined by the change from the base profile symbol to the test profile symbol (approximately 1.0 for an average mutation). See [Huber et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30241075/) for further details.
+The neighbors' display follows the same principles as the summary of matches (refer to 4.3. Details). Differences between query and database mitotypes are treated as (biological) **events**.
 
-Count lists the number of mutational events between query and database mitotypes.
-Note that some combined mutations are single events, e.g. 523del 524del or 106-111del and treated as such in EMPOP.
+- Definition of an **Event**:
+    An **event** reflects the biological significance of a difference, rather than the absolute number of differing nucleotides.
 
-Mutations specifies differences between query and database mitotypes, which are listed with the individual costs. Disregarded indels do not contribute to the final costs.
+- **Examples**:
+-   A tandem deletion (or insertion) in the AC-repeat region between positions 514–524 is considered one event, representing a single difference between otherwise matching mitotypes, i.e., 523del 524del, 524.1A 524.2C, etc ...
+-   The 6 bp "Chibcha" deletion between positions 105–110 or 106–111 is considered on event.
+-   The 9 bp deletion between positions 8281–8290 is considered on event.
+
+Additional Information:
+- Differences between the query mitotype and its neighbors are detailed in the following columns:
+- Cost: Reflecting the calculated genetic distance.
+- Count: Indicating the total number of differences (events).
+- (missing) variants: Specifying the exact nucleotide differences.
+
+Costs are estimated by the change from the database mitotype symbol to the query mitotype symbol (approx. 1.0 for an average transition; ee [Huber et al, 2018](https://pubmed.ncbi.nlm.nih.gov/30241075/) for further details).
+
 
 ### 4.5. Alignment
-Since EMPOP 4 the phylogenetic alignment is displayed as illustrated below:
+The phylogenetic alignment ([Bandelt and Parson, 2007](https://doi.org/10.1007/s00414-006-0151-5)) is contrasted to the query input of the mitotype. Discrepancies are highlighted in red color.
 
 ![](images/fig10_alignment.png)
+
 
 ### 4.6. Haplogrouping
 The assignment of haplogroups to mitotypes contributes substantial value for quality control, not only in forensic genetics but also in population and medical genetics. The availability of Phylotree, a widely accepted phylogenetic tree of human mitochondrial DNA lineages, led to the development of several (semi-)automated software solutions for haplogrouping. However, the currently existing tools only make use of haplogroup-defining mutations, whereas private mutations (beyond the haplogroup level) can be additionally informative allowing for enhanced haplogroup assignment.
