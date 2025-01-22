@@ -160,21 +160,12 @@ The numbers of matches under **Metapopulation** may exceed the total database ma
 For example, **US Caucasian** is a sub-metapopulation of **Westeurasian**.
 
 ### 4.3. Details
-The **Details** tab summarizes the matches from **Result** and provides country of sampling and metapopulation (filters can be applied). Ignored variants (costs = 0) are listed; details can be found in [Huber et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30241075/).
+The **Details** tab summarizes the matches from **Result** and provides country of sampling and metapopulation (filters can be applied for geographic origin and metapopulation). Ignored variants (costs = 0) are listed; details can be found in [Huber et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30241075/).
 
 ![](images/V4R14-FigDetails.png)
 
 When **no matches** are found the **Details** tab stays empty.
 
-![](images/4_3_2_not_matches.png)
-
-Unobserved mitotypes are indicated by a frequency value of “0”:
-
-![](images/fig7_no_matches.png)
-
-In Details no matches are listed:
-
-![](images/fig8_no_matches.png)
 
 ### 4.4. Neighbors
 Similar sequences with a low number of differences are displayed here.
