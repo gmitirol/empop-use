@@ -7,7 +7,7 @@ Haplogropup Browser consists of two parts, **haplogropup distribution** and **va
 
 #### 6.1.1.	Distribution of haplogroups
 This tool provides a searchable format of the most recent Phylotree (b.17) haplogroups. Key features include:
-- Assignment of quality-controled EMPOP sequences to haplogroups  (numbers in brackets)
+- Assignment of quality-controled EMPOP sequences to haplogroups using the most common recent ancestor (MRCA, numbers in brackets)
 - Graphical display (heatmap) of haplogroup distribiution
 
 Details can be found in [Dür et al, 2021](https://doi.org/10.3390/ijms22115747).
@@ -16,6 +16,12 @@ This feature can be used to evaluate the distribution of mtDNA haplogroups aroun
 
 ![](images/V4R14-HGBrowser.png)
 Distributin of haplogroup HV0a1. Nodes represent sampled regions.
+
+#### 6.1.2.	Variant finder
+This tool searches variant(s) in vetted mitogenomes from GenBank and displays the respective haplogroup. The figure below shows the search results for 493G and 489C. Click on the resulting haplogroup to show its distribution on the map.
+
+![](images/V4R14-FigVariant.png)
+
 
 ### 6.2.	EMPcheck
 EMPcheck is a tool to perform plausibility checks on an rCRS-coded data table.
