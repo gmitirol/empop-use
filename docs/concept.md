@@ -33,9 +33,9 @@ Database queries can only be performed using dedicated software implemented in E
 
 The EMPOP query output provides:
 
-    The number of observed mitotypes in a given country or metapopulation
-    The probability of the mitotype, calculated using the Clopper-Pearson method
-    Correction factors to address sampling bias
+- The number of observed mitotypes in a given country or metapopulation
+- The probability of the mitotype, calculated using the Clopper-Pearson method
+- Correction factors to address sampling bias
 
 Additionally, the ALIGNMENT tab offers a phylogenetic representation of the query mitotype, while the HAPLOGROUPING tab displays the best-matching haplogroups.
 
