@@ -35,7 +35,7 @@ The EMP-file is a tab-delimited text file.
 
 The EMP-file uses columns with the following contents:
 - Column A: Sample ID: **do not** use blank space or special characters (allowed characters include letters (excluding ä, ö, ü), numbers, "-", "_", "/")
-- Column B: Haplogroup status: indicate haplogroup or use "?" if unknown
+- Column B: indicate haplogroup or use "?" if unknown
 -  Column C: Frequency of mitotype (0 - 9999). Typically, this value is set to “1”, as individual mitotypes should be presented. If this value is set to 0 the sample is excluded from analysis by the EMPOP software. Alternatively, a "#" can be added at the beginning of the line to exclude a mitotype from analysis.
 - Column D: Annotation of the variants relative to the rCRS. Variants need to be separated by tabs-delimiters (or place each variant in individual cells if using MS Excel). Follow the forensic notation guideline as detailed in the revised and updated ISFG recommendations for mtDNA typing ([Parson et al, 2014](http://dx.doi.org/10.1016/j.fsigen.2014.07.010)) and in this document (Chapter 4).
 
