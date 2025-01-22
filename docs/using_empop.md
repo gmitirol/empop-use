@@ -50,6 +50,7 @@ Use this field to enter the ID of a mitotype. The search results will be linked 
 
 #### 4.1.2. Ranges	
 Database queries require the specification of interpretation ranges for rCRS-coded and FASTA-like string mitotypes. Commonly used ranges include
+
 - HVS-I (16024–16365),
 - HVS-II (73–340),
 - CR (16024–576),
@@ -57,10 +58,7 @@ Database queries require the specification of interpretation ranges for rCRS-cod
 
 Individual SNPs can also be queried by specifying the SNP in the range field (e.g., 3010). 
 
-| :exclamation:  It is important to note that EMPOP relies on the sequence range provided by the submitting laboratory.   |
-|-----------------------------------------|
-
-As a result, these ranges may vary slightly across different submissions or populations. 
+❗  It is important to note that EMPOP relies on the sequence range provided by the submitting laboratory. As a result, these ranges may vary slightly across different submissions or populations. 
 
 Note that the omission of sequence information within a specified range will be interpreted as rCRS-based data. This can result in artificial recombination, potentially impacting the accuracy of analyses. Further details, see in e.g., [Bandelt et al., 2004](https://doi.org/10.1007/s00414-004-0455-2).
 
@@ -194,11 +192,13 @@ The neighbors' display follows the same principles as the summary of matches (re
 Definition of an **Event**: An **event** reflects the biological significance of a difference, rather than the absolute number of differing nucleotides.
 
 **Examples**:
+
 - A tandem deletion (or insertion) in the AC-repeat region between positions 514–524 is considered one event, representing a single difference between otherwise matching mitotypes, i.e., 523del 524del, 524.1A 524.2C, etc ...
 - The 6 bp "Chibcha" deletion between positions 105–110 or 106–111 is considered one event.
 - The 9 bp deletion between positions 8281–8290 is considered one event.
 
 Additional Information:
+
 - Differences between the query mitotype and its neighbors are detailed in the following columns:
 - Cost: Reflecting the calculated genetic distance.
 - Count: Indicating the total number of differences (events).
