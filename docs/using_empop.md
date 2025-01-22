@@ -202,7 +202,7 @@ The phylogenetic alignment ([Bandelt and Parson, 2007](https://doi.org/10.1007/s
 
 
 ### 4.6. Haplogrouping
-The assignment of haplogroups to mitotypes contributes substantial value for quality control, not only in forensic genetics but also in population and medical genetics. The availability of Phylotree, a widely accepted phylogenetic tree of human mitochondrial DNA lineages, led to the development of several (semi-)automated software solutions for haplogrouping. However, the currently existing tools only make use of haplogroup-defining mutations, whereas private mutations (beyond the haplogroup level) can be additionally informative allowing for enhanced haplogroup assignment.
+Haplogrouping introduces a new algorithm specifically developed for the alignment and the haplogroup estimation of human mtDNA sequences. The original 5435 haplogroup motifs (Phylotree Build 17) were refined without altering haplogroup nomenclature. We adapted 430 motifs (8%) and added 966 motifs for new subclades, resulting in an 18% increase in haplogroup defining motifs for full mitogenomes and a 30% increase for the mtDNA control region.
 
-For details see [Huber et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30241075/).
+For details see [Dür et al, 2021](https://doi.org/10.3390/ijms22115747).
 
