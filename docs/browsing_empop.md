@@ -1,6 +1,7 @@
-## 5. Browsing EMPOP for Populations
+## 5. EMPOP populations
 
-![](images/fig11_populations.png)
+The EMPOP Stats tab displays a summary table that provides an overview of the individual datasets included in EMPOP. The table includes details such as:
+- The number of samples in each dataset
+- The sequenced range(s) covered by each dataset
 
-Under the tab POPULATIONS the individual datasets contained in EMPOP can be found by using the accession number (if known), geographic or metapopulation affiliations.
-Published datasets can be searched by Text (Title) and Authors.
+![](images/V4R14.FigPopulations.png)
