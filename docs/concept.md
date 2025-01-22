@@ -2,10 +2,10 @@
 
 **Main functions of EMPOP**
 
-1)	Estimate the frequecy of a mitotype in a given population
-2)	Check mitotype alignment
-3)	Estimate haplogroup and evaluate its distribution
-4)	Examine the quality of a mitotype/an mtDNA dataset
+1. Estimate the frequecy of a mitotype in a given population
+2. Check mitotype alignment
+3. Estimate haplogroup and evaluate its distribution
+4. Examine the quality of a mitotype/an mtDNA dataset
 
 EMPOP stores anonymized mitotypes that are not linked to any personal information about the sample donors. Through an EMPOP query, only the country of origin and the self-reported metapopulation of the sample donors are accessible.
 
@@ -29,7 +29,7 @@ Data uploaded to EMPOP are fully anonymized, with no sample names available to p
 Access to mitotypes is restricted to specific EMPOP software, which facilitates database queries. The output of an EMPOP search provides only the information necessary to understand the distribution and frequency of mitotypes (representing lineages, not individuals) at a national (country) or metapopulation level. No personal data about the sample donors are stored or provided through the EMPOP database.
 
 ### 2.3	 EMPOP queries
-Database queries can only be performed using dedicated software implemented in EMPOP. The scientific foundation of these software modules, known as the String Alignment Method (SAM), is detailed in the scientific literature (Röck 2010; Huber 2018; Dür 2021). In summary, mitotypes encoded in the rCRS format, which is commonly used to represent mtDNA sequences, are converted into alignment-free nucleotide strings (FASTA-like format) and compared against a database of similarly formatted sequences. This approach ensures that matches between query and database sequences are identified independently of the alignment used in the query, eliminating alignment-related biases that could otherwise distort frequency values.
+Database queries can only be performed using dedicated software implemented in EMPOP. The scientific foundation of these software modules, known as the String Alignment Method (SAM), is detailed in the scientific literature [Röck et al. 2010](https://pubmed.ncbi.nlm.nih.gov/21056022/), [Huber et al. 2018](https://pubmed.ncbi.nlm.nih.gov/30241075/) and [Dür et al. 2021](https://pubmed.ncbi.nlm.nih.gov/34072215/). In summary, mitotypes encoded in the rCRS format, which is commonly used to represent mtDNA sequences, are converted into alignment-free nucleotide strings (FASTA-like format) and compared against a database of similarly formatted sequences. This approach ensures that matches between query and database sequences are identified independently of the alignment used in the query, eliminating alignment-related biases that could otherwise distort frequency values.
 
 The EMPOP query output provides:
 
@@ -37,7 +37,7 @@ The EMPOP query output provides:
 - The probability of the mitotype, calculated using the Clopper-Pearson method
 - Correction factors to address sampling bias
 
-Additionally, the ALIGNMENT tab offers a phylogenetic representation of the query mitotype, while the HAPLOGROUPING tab displays the best-matching haplogroups.
+Additionally, the **ALIGNMENT** tab offers a phylogenetic representation of the query mitotype, while the **HAPLOGROUPING** tab displays the best-matching haplogroups.
 
 The scientific framework and quality control measures implemented in EMPOP have been deemed suitable for forensic purposes, as affirmed by several authoritative sources. These include a declaration by the German Supreme Court of Justice (2010), the SWGDAM mtDNA Interpretation Guidelines (2013, 2024), and the updated ISFG Guidelines for mtDNA Analysis and Interpretation (2014).
 
