@@ -26,7 +26,10 @@ This tool allows the search for specific variant(s) in vetted mitogenomes from G
 EMPcheck is a tool to perform plausibility checks on rCRS-coded data.
 The file format must meet the requirements described below (see also [Parson et al, 2014](http://dx.doi.org/10.1016/j.fsigen.2014.07.010)).
 
-#### 6.2.1.	Structure of the emp-file
+Example from EMPOP the downlaod section (EMP_Example_AUT_273.emp)
+![](images/V4R14-FigEMP.png)
+
+
 Lines starting with "#!" indicate the sequence range of the mitotype. Note that a given sequence range is applied to all mtDNA mitotypes following this range until a new range is defined. Thus, multiple mitotypes with different sequence ranges can be handled in one file. 
 The file lists the mitotypes in columns with the following contents.
 
