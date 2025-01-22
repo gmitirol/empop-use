@@ -142,40 +142,29 @@ The execution of a database query automatically directs the user to the Results 
 ![](images/V4R14-FigResult.png)
 
 An uncorrected frequency estimate is provided including a two-tailed Clopper Pearson confidence interval. Probabilities can be estimated using the following options (drop-down box):
-
-(x+1)/(n+1)
-(x+2)/(n+2)
-CI from zero pop
+- (x+1)/(n+1)
+- (x+2)/(n+2)
+- CI from zero pop
 
 Where x… number of matches and n… database size.
 
 
 **Range-Dependent Inclusion of Mitotypes in Query Results:**
+The number of mitotypes included in a query result depends on the **specified sequence range(s)**. Only database mitotypes whose sequence range(s) overlap with the query range will be considered.
 
-The number of mitotypes included in a query result depends on the specified sequence range. Only database mitotypes whose sequence range overlaps with the query range will be considered.
-
-  **Example:** A query with the range **16024–576** includes all database sequences typed for the entire **control region**. However, **HVS-I/II** data (e.g., 16024–16365 and 73–340) would not be included in such a query.
-
-  To ensure **comprehensive results**, it may be prudent to perform an additional query using standard HVS-I/II sequence ranges (e.g., 16024–16365 and 73–340).
+- **Example:** A query with the range **16024–576** includes all database sequences typed for the entire **control region**. However, **HVS-I/II** data (e.g., 16024–16365 and 73–340) would not be included in such a query. To ensure **comprehensive results**, it may be prudent to perform an additional query using standard HVS-I/II sequence ranges (e.g., 16024–16365 and 73–340).
 
 ❗ **Note:**
-The numbers of matches listed under **Origin** represent the **total** number of matches in the database.
+The numbers of matches listed under **Origin** represent the total number of matches in the database.
 The numbers of matches under **Metapopulation** may exceed the total database matches because some metapopulations are **subsets** of others.
 For example, **US Caucasian** is a sub-metapopulation of **Westeurasian**.
 
 ### 4.3. Details
-The Details tab provides a more detailed presentation of the matching mitotypes.
+The **Details** tab summarizes the matches from **Result** and provides country of sampling and metapopulation (filters can be applied). Ignored variants (costs = 0) are listed; details can be found in [Huber et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30241075/).
 
-#### 4.3.1. When matches are found
-![](images/fig6_details.png)
+![](images/V4R14-FigDetails.png)
 
-EMPOP provides a summary table of all matching mitotypes that meet the queried sequence range. Columns can be sorted by clicking on the column headers.
-Geographic and metapopulation origins can be filtered using the text boxes.
-Ignored mutations list the differences between database and query sequences that were disregarded for the search (see 4.1.7. Disregard InDels ). The values in brackets display the costs of the listed mutation. For details see [Huber et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30241075/).
-Haplogroup indicates the samples’ haplogroup assignment. In case of a database match, there is no need to estimate the haplogroup as this column simply indicates the haplogroup of the matching samples. Rank 1 displays the haplogroup estimate with lowest costs (including a tolerance of 0.1) and Rank 2 displays the haplogroup estimate with the next lowest costs (including a tolerance of 0.1).
-
-4.3.2. When no matches are found
-MtDNA sequence queries often do not result in database matches. In these cases the Details tab stays empty.
+When **no matches** are found the **Details** tab stays empty.
 
 ![](images/4_3_2_not_matches.png)
 
