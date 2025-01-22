@@ -1,12 +1,21 @@
 ## 6. EMPOP Tools
 
-The EMPOP tools section provides a suite of software to support the analysis and interpretation of mitochondrial DNA sequence variation.
+The **EMPOP tools** tab includes software to support the analysis and interpretation of mtDNA sequence variation.
 
 ### 6.1.	Haplogroup Browser
-This tool represents the established most recent Phylotree haplogroups in convenient searchable format and provides the number of EMPOP sequences assigned to the respective haplogroups by SAM2. Note that EMPOP provides the MRCA haplogroup if multiple haplogroup assignments are feasible. 
-Individual haplogroups can also be found by querying differences to the rCRS in a database of > 20.000 mtGenome sequences.
+Haplogropup Browser consists of two parts, **haplogropup distribution** and **variant finder**. 
 
-![](images/fig12_populations.png)
+#### 6.1.1.	Distribution of haplogroups
+This tool provides a searchable format of the most recent Phylotree (b.17) haplogroups. Key features include:
+- Assignment of quality-controled EMPOP sequences to haplogroups  (numbers in brackets)
+- Graphical display (heatmap) of haplogroup distribiution
+
+Details can be found in [Dür et al, 2021](https://doi.org/10.3390/ijms22115747).
+
+This feature can be used to evaluate the distribution of mtDNA haplogroups around the globe.
+
+![](images/V4R14-HGBrowser.png)
+Distributin of haplogroup HV0a1. Nodes represent sampled regions.
 
 ### 6.2.	EMPcheck
 EMPcheck is a tool to perform plausibility checks on an rCRS-coded data table.
