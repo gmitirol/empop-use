@@ -18,10 +18,9 @@ This feature can be used to evaluate the distribution of mtDNA haplogroups aroun
 Distributin of haplogroup HV0a1. Nodes represent sampled regions.
 
 #### 6.1.2.	Variant finder
-This tool searches variant(s) in vetted mitogenomes from GenBank and displays the respective haplogroup. The figure below shows the search results for 493G and 489C. Click on the resulting haplogroup to show its distribution on the map.
+This tool allows the search for specific variant(s) in vetted mitogenomes from GenBank and displays the corresponding haplogroup(s) contianing the variant(s). The figure below illustrates the search results for 493G and 489C. Click on any resulting haplogroup to view its distribution on the map.
 
 ![](images/V4R14-FigVariant.png)
-
 
 ### 6.2.	EMPcheck
 EMPcheck is a tool to perform plausibility checks on an rCRS-coded data table.
