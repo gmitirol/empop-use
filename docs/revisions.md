@@ -2,6 +2,7 @@
 | Date | Event |
 |---|---|
 | January 2025 | Revision of USE document and adaptation to V4R14 |
+| April 2019 | Added new block indel 494-503 (CCCCGCCCA) |
 | September 2018 | Released EMPOP 4 |
 | September 2018 | Improved search functions, phylogenetic alignment, and haplogrouping in SAM2 |
 | September 2018 | Revised several sections of the USE document |
