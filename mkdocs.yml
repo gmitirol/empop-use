@@ -16,5 +16,5 @@ markdown_extensions:
 
 plugins:
   - search
-  - git-revision-date-localized:
+  - mkdocs-git-revision-date-localized:
       fallback_to_build_date: true
