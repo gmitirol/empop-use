@@ -513,7 +513,7 @@ analysis and interpretation of mitochondrial DNA sequence variation.
 ### 6.1.Haplogroup Browser
 
 This tool represents the established most recent
-[Phylotree](http://www.ncbi.nlm.nih.gov/pubmed/18853457) haplogroups in
+[mitoLEAF](https://forensicgenomics.github.io/mitoLeaf/haplogroups.html) haplogroups in
 convenient searchable format and provides the number of EMPOP sequences
 assigned to the respective haplogroups by SAM2. Note that EMPOP provides
 the MRCA haplogroup if multiple haplogroup assignments are feasible.

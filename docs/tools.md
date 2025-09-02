@@ -6,7 +6,7 @@ The **EMPOP tools** tab includes software to support the analysis and interpreta
 Haplogropup Browser consists of two parts, **haplogropup distribution** and **variant finder**. 
 
 #### 6.1.1.	Distribution of haplogroups
-This tool provides a searchable format of the most recent Phylotree (b.17) haplogroups. Key features include:
+This tool provides a searchable format of the most recent mitoLEAF haplogroups. Key features include:
 
 - Assignment of quality-controled EMPOP sequences to haplogroups using the most common recent ancestor (MRCA, numbers in brackets)
 - Graphical display (heatmap) of haplogroup distribiution

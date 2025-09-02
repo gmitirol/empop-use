@@ -218,3 +218,6 @@ Haplogrouping introduces a new algorithm specifically developed for the alignmen
 
 For details see [Dür et al., 2021](https://doi.org/10.3390/ijms22115747).
 
+Since 2025, haplogrouping is based on mitoLEAF, the continuation and extension of Phylotree Build 17. mitoLEAF integrates all Phylotree-17 haplogroups and expands the reference set to 6409 motifs, providing a more comprehensive and up-to-date framework for mitochondrial haplogroup classification while preserving established nomenclature.
+
+For details see [Huber et al., 2025](https://academic.oup.com/nargab/article/7/2/lqaf079/8160313).
