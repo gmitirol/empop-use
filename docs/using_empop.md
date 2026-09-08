@@ -130,6 +130,7 @@ Length heteroplasmy is located in known hotspots (homopolymeric tracts) for inse
 |     315*              |     302            |     316            |     C                  |
 |     455               |     451            |     456            |     T                  |
 |     463               |     460            |     464            |     C                  |
+|     524               |     514            |     525            |     AC                 |
 |     573               |     567            |     574            |     C                  |
 |     960               |     955            |     961            |     C                  |
 |     5899              |     5894           |     5900           |     C                  |

@@ -1,6 +1,7 @@
 ## **Revision Overview**
 | Date | Event |
 |---|---|
+| September 2026 | Revision of USE document and adaptation to V4R15 |
 | January 2025 | Revision of USE document and adaptation to V4R14 |
 | April 2019 | Added new block indel 494-503 (CCCCGCCCA) |
 | September 2018 | Released EMPOP 4 |
