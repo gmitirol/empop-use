@@ -1,6 +1,8 @@
 # Welcome to the EMPOP Documentation!
 
-**Version**  4.14.0
+<!-- Update "Last Changed": touch this file (index.md) whenever the EMPOP version changes -->
+
+**Version**  v4/R15
 
 **Last Changed**  {{ git_revision_date_localized }}
 
